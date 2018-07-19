@@ -6,6 +6,7 @@ import urllib.request
 import csv
 
 txtList = []
+
 with open('파일명.csv', mode='r', encoding='utf-8') as f:  # 같은 폴더 내의 캡션 csv 파일로 대체
     reader = csv.reader(f)
     for row in reader:
@@ -26,7 +27,7 @@ with open('파일명.csv', mode='r', encoding='utf-8') as f:  # 같은 폴더 �
             txtList.append(korTrans)
         else:
             print("Error Code:" + rescode)
-print(txtList)
+            
 with open('result.csv', mode='w', newline='') as write_file:
     writer = csv.writer(write_file, delimiter=',')
     for txt in txtList:
