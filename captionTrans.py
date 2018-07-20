@@ -1,4 +1,5 @@
 # 네이버 Papago NMT API 예제를 수정한 것
+# 올해 1월부터 하루당 10000글자로 제한됨..
 
 import os
 import sys
