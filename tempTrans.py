@@ -24,6 +24,11 @@ print(tList)
 
 driver.close()
 
+
+
+
+
+
 '''
 ************ 시험용 코드 **************
 import pandas as pd
