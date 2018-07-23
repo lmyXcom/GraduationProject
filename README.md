@@ -6,6 +6,16 @@
 2018.07 ~ 2018.09
 
 
+[참고]
+
+https://github.com/kelvinxu/arctic-captions
+
+https://github.com/jazzsaxmafia/show_attend_and_tell.tensorflow
+
+https://github.com/yunjey/show-attend-and-tell
+
+
+
 [진행 상황]
 
 Step 1. Flickr30k 데이터셋 출처: http://web.engr.illinois.edu/~bplumme2/Flickr30kEntities/
