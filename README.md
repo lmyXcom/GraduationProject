@@ -6,7 +6,7 @@
 2018.07 ~ 2018.09
 
 
-[참고]
+[Reference]
 
 https://github.com/kelvinxu/arctic-captions
 
