@@ -76,14 +76,7 @@ if __name__ == '__main__':
         korea.append(translation(en))
         if iteration % 1000 == 0:
             driver.refresh()
-    ''' 오류나서 일단 지움
-    for iteration, en in pb(enumerate(result_data)):
-        korea.append(translation(en))
-        num = num+1
-        if num%1000 == 0:
-            driver.refresh()
-    '''
-
+    
     print('translation end!')
     k = pd.Series(korea)
     print('list to series complete')
