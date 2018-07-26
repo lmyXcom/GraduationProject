@@ -1,3 +1,5 @@
+# need to change several lines accroding to caption file of mine
+
 from scipy import ndimage
 from collections import Counter
 from core.vggnet import Vgg19
