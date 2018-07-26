@@ -4,13 +4,16 @@ import pandas as pd
 import os
 
 dirFileslist = '파일명 있는 목록 csv파일의 경로명'
-label = pd.read_csv(dirFileslist, skiprows=1, usecols=[1], names=['label'], encoding='utf-8', engine='python')
+label = pd.read_csv(dirFileslist, skiprows=1, usecols=[1], names=['label'], encoding='utf-8', engine='python') 
+# -> csv 파일에서 첫행 건너뛰고(skiprows=1), 2번째 열만 읽어오려고(usecols=[1])
 label_list = label.values.tolist()
+
 
 # flatten list of list -> [[a], [b],..] 를 [a, b, ...]로 바꿈
 import numpy as np
 flat_label = np.array(label_list)
 new_label = flat_label.flatten().tolist()
+
 
 # 리스트의 중복 제거
 def remove_duplicates(list):
