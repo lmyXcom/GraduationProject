@@ -28,10 +28,9 @@ new_label = remove_duplicates(new_label)
 import shutil
 imgPath = '원래 이미지 파일 위치한 폴더의 경로'
 destDir = '이름 일치하는 파일을 복사할 폴더의 경로'
-for image in w:
-    for num in new_label:
-        num = str(num)
-        print(num)
-        imgPath2 = 'imgPath의 경로/%s.jpg' %num
-        shutil.copy(imgPath2, destDir))
+for num in new_label:
+    num = str(num)
+    print(num)
+    imgPath2 = 'imgPath의 경로/%s.jpg' %num
+    shutil.copy(imgPath2, destDir)
 print('복사 완료')
