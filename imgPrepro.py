@@ -1,4 +1,5 @@
 # need to change several lines accroding to caption file of mine
+# reference: https://github.com/yunjey/show-attend-and-tell
 
 from scipy import ndimage
 from collections import Counter
