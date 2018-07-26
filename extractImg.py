@@ -3,7 +3,7 @@
 import pandas as pd
 import os
 
-dirFileslist = '파일명 있는 목록 csv파일의 경로면'
+dirFileslist = '파일명 있는 목록 csv파일의 경로명'
 label = pd.read_csv(dirFileslist, skiprows=1, usecols=[1], names=['label'], encoding='utf-8', engine='python')
 label_list = label.values.tolist()
 
