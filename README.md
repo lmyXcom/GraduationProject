@@ -24,6 +24,8 @@ Step 1. Flickr30k 데이터셋 출처: http://web.engr.illinois.edu/~bplumme2/Fl
 
 Step 2. 캡션 파일을 네이버 파파고 통해 번역
 
-Step 3. 번역 오류 검수(~ing)
+Step 3. 번역 오류 검수
 
-Step 4.
+Step 4. 일단 소규모 데이터셋만 추출
+
+Step 5. 본격 모델링 진입 (~ing)
