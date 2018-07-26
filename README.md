@@ -14,6 +14,8 @@ https://github.com/jazzsaxmafia/show_attend_and_tell.tensorflow
 
 https://github.com/yunjey/show-attend-and-tell
 
+https://wikidocs.net/book/536
+
 
 
 [진행 상황]
