@@ -1,3 +1,4 @@
+#reference: https://github.com/yunjey/show-attend-and-tell
 #Python3 버젼의 train.py
 
 from core.solver import CaptioningSolver
