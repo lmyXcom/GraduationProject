@@ -28,6 +28,6 @@ Step 3. 번역 오류 검수
 
 Step 4. 일단 소규모 데이터셋만 추출
 
-Step 4.5. 운영체제 Linux/Ubuntu + Python2.7 필요 (~ing)
+Step 4.5. 운영체제 Linux/Ubuntu + Python2.7 구축 - GCP의 VM 사용
 
 Step 5. 본격 모델링 진입 (~ing)
