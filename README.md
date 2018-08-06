@@ -12,7 +12,7 @@ https://github.com/kelvinxu/arctic-captions
 
 https://github.com/jazzsaxmafia/show_attend_and_tell.tensorflow
 
-https://github.com/yunjey/show-attend-and-tell
+https://github.com/yunjey/show-attend-and-tell    -> PRIMARY SOURCE
 
 https://wikidocs.net/book/536
 
