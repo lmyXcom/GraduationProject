@@ -131,19 +131,19 @@ def main():
     # if word occurs less than word_count_threshold in training dataset, the word index is special unknown token.
     word_count_threshold = 1
     # vgg model path 
-    vgg_model_path = './data/imagenet-vgg-verydeep-19.mat'
+    vgg_model_path = './data/imagenet-vgg-verydeep-19.mat' #modify directory names
 
-    caption_file = 'data/annotations/captions_train2014.json'
+    caption_file = 'data/annotations/captions_train2014.json' #modify directory names
     image_dir = 'image/%2014_resized/'
 
     # about 80000 images and 400000 captions for train dataset
     train_dataset = _process_caption_data(caption_file='data/annotations/captions_train2014.json',
-                                          image_dir='image/train2014_resized/',
+                                          image_dir='image/train2014_resized/', #modify directory names
                                           max_length=max_length)
 
     # about 40000 images and 200000 captions
     val_dataset = _process_caption_data(caption_file='data/annotations/captions_val2014.json',
-                                        image_dir='image/val2014_resized/',
+                                        image_dir='image/val2014_resized/', #modify directory names
                                         max_length=max_length)
 
     # about 4000 images and 20000 captions for val / test dataset
@@ -160,16 +160,16 @@ def main():
 
         if split == 'train':
             word_to_idx = _build_vocab(annotations=annotations, threshold=word_count_threshold)
-            save_pickle(word_to_idx, './data/%s/word_to_idx.pkl' % split)
+            save_pickle(word_to_idx, './data/%s/word_to_idx.pkl' % split) #modify directory names
         
         captions = _build_caption_vector(annotations=annotations, word_to_idx=word_to_idx, max_length=max_length)
-        save_pickle(captions, './data/%s/%s.captions.pkl' % (split, split))
+        save_pickle(captions, './data/%s/%s.captions.pkl' % (split, split)) #modify directory names
 
         file_names, id_to_idx = _build_file_names(annotations)
-        save_pickle(file_names, './data/%s/%s.file.names.pkl' % (split, split))
+        save_pickle(file_names, './data/%s/%s.file.names.pkl' % (split, split)) #modify directory names
 
         image_idxs = _build_image_idxs(annotations, id_to_idx)
-        save_pickle(image_idxs, './data/%s/%s.image.idxs.pkl' % (split, split))
+        save_pickle(image_idxs, './data/%s/%s.image.idxs.pkl' % (split, split)) #modify directory names
 
         # prepare reference captions to compute bleu scores later
         image_ids = {}
@@ -190,8 +190,8 @@ def main():
     with tf.Session() as sess:
         tf.initialize_all_variables().run()
         for split in ['train', 'val', 'test']:
-            anno_path = './data/%s/%s.annotations.pkl' % (split, split)
-            save_path = './data/%s/%s.features.hkl' % (split, split)
+            anno_path = './data/%s/%s.annotations.pkl' % (split, split) #modify directory names
+            save_path = './data/%s/%s.features.hkl' % (split, split) #modify directory names
             annotations = load_pickle(anno_path)
             image_path = list(annotations['file_name'].unique())
             n_examples = len(image_path)
