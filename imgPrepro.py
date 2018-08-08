@@ -4,8 +4,8 @@
 
 from scipy import ndimage
 from collections import Counter
-from core.vggnet import Vgg19
-from core.utils import *
+from core.vggnet import Vgg19 # inside the core folder -> change directory maybe?
+from core.utils import * # inside the core folder -> change directory maybe?
 
 import tensorflow as tf
 import numpy as np
