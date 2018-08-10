@@ -1,3 +1,5 @@
+# source from: https://github.com/yunjey/show-attend-and-tell
+
 import numpy as np
 import cPickle as pickle
 import hickle
