@@ -4,8 +4,8 @@
 
 from scipy import ndimage
 from collections import Counter
-from core.vggnet import Vgg19 
-from core.utils import * 
+from vggnet import Vgg19 
+from utils import * 
 
 import tensorflow as tf
 import numpy as np
