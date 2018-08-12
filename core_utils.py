@@ -1,4 +1,5 @@
 # source from: https://github.com/yunjey/show-attend-and-tell
+# Python 2.7
 
 import numpy as np
 import cPickle as pickle
