@@ -1,9 +1,9 @@
 #reference: https://github.com/yunjey/show-attend-and-tell
-#Python3 버젼의 train.py
+#Python3 버젼의 train.py -> 교체 
 
-from core.solver import CaptioningSolver
-from core.model import CaptionGenerator
-from core.utils import load_coco_data
+from core_solver import CaptioningSolver
+from core_model import CaptionGenerator
+from core_utils import load_coco_data
 
 
 def main():
