@@ -39,7 +39,7 @@ def _process_caption_data(caption_file, image_dir, max_length):
     del_idx = []
     for i, caption in enumerate(caption_data['caption']):
         caption = caption.replace('.','').replace(',','').replace("'","").replace('"','')
-		#문장에서 띄어쓰기나 기타 문장부호 다 제거하려나 보다
+		# eliminating every whitespaces in sentences
         caption = caption.replace('&','and').replace('(','').replace(")","").replace('-',' ')
         caption = " ".join(caption.split())  # replace multiple spaces
         
@@ -136,24 +136,28 @@ def main():
     vgg_model_path = './data/imagenet-vgg-verydeep-19.mat' 
 	##### vgg model-> wget http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat -P data/
 
-    caption_file = 'data/annotations/captions_train2014.json'
+    caption_file = '/home/most12lee/downloads/data/token_3000imgs.json'
     image_dir = '/home/most12lee/downloads/data/%s_resized/'
 
     # about 80000 images and 400000 captions for train dataset
-    train_dataset = _process_caption_data(caption_file='data/annotations/captions_train2014.json', #### 고쳐
+	# -> ME: about 2100 images and 10500 captions for train datasets
+    train_dataset = _process_caption_data(caption_file='/home/most12lee/downloads/data/token_3000imgs_train.json', #### DONT FORGET TO CHANGE CSV INTO JSON FILE!!!!!!
                                           image_dir='/home/most12lee/downloads/data/train_resized/',
                                           max_length=max_length)
 
     # about 40000 images and 200000 captions
-    val_dataset = _process_caption_data(caption_file='data/annotations/captions_val2014.json', #### 고쳐
+	# -> ME: about 900 images and 4500 captions for val datasets
+    val_dataset = _process_caption_data(caption_file='/home/most12lee/downloads/data/token_3000imgs_val.json', #### DONT FORGET TO CHANGE CSV INTO JSON FILE!!!!!!
                                         image_dir='/home/most12lee/downloads/data/val_resized/',
                                         max_length=max_length)
 
     # about 4000 images and 20000 captions for val / test dataset
+	# -> ME: about 90 images and 450 captions for val / test datasets
     val_cutoff = int(0.1 * len(val_dataset))
     test_cutoff = int(0.2 * len(val_dataset))
     print 'Finished processing caption data'
 
+	
     save_pickle(train_dataset, 'data/train/train.annotations.pkl')
     save_pickle(val_dataset[:val_cutoff], 'data/val/val.annotations.pkl')
     save_pickle(val_dataset[val_cutoff:test_cutoff].reset_index(drop=True), 'data/test/test.annotations.pkl')
