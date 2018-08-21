@@ -32,4 +32,4 @@ Step 4.5. 운영체제 Linux/Ubuntu + Python2.7 구축 - GCP의 VM 사용
 
 Step 5. 모델링 진입 (~ing)
 
-(+) 중간 
+STILL WORKING ON IT 
