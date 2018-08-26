@@ -33,3 +33,5 @@ Step 4.5. 운영체제 Linux/Ubuntu + Python2.7 구축 - GCP의 VM 사용
 Step 5. 모델링 진입
 
 Step 5.5 오류 수정 -> 거의 완료...
+
+Step 6 소규모 돌리고 -> 돌아가는지 확인되면 -> 전체 데이터 돌리면서 hyperparameter 수치 수정하면서 
