@@ -21,6 +21,7 @@ def _process_caption_data(caption_file, image_dir, max_length):
 
     # id_to_filename is a dictionary such as {image_id: filename]} 
     id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
+	# id: just number(not important), file_name: file name in number->string
 	
 
     # data is a list of dictionary which contains 'captions', 'file_name' and 'image_id' as key.
