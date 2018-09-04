@@ -24,7 +24,7 @@ def _process_caption_data(caption_file, image_dir, max_length):
     # id_to_filename is a dictionary such as {image_id: filename]} 
     id_to_filename = {image['id']: image['image_id'] for image in caption_data}
 	
-
+####################### testing slight change from imgPrepro.py, starting here ########################### 
     # data is a list of dictionary which contains 'captions', 'file_name' and 'image_id' as key.
     data = []
     for annotation in caption_data:
