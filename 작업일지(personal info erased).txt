@@ -1,0 +1,440 @@
+< 이전 내용은 깃헙 참고해야 할듯 >
+
+================================================================================================
+< 727 작업내용 >
+
+(1) 전체 데이터셋에서 특정 이미지만 뽑아올 수 있게 구현함
+: 파이참의 C:/Users/[PC유저명]/PycharmProjexts/papago_trans 프로젝트 폴더 내의 save6000.py 파일
+-> 깃헙의 extractImg.py 로 업로드함
+
+(2) 이미지 리사이징 부분 구현하고자 했으나, 구한 코드에서는 Python 2.7을 쓰는데 문제는 Windows에서 2.7의 tensorflow를 제공하지 않는다.
+따라서 이 코드는 일단 써먹을 수 없게 됐다. (2.7을 3.5로 수정하기 시작하면 나머지도 전부 다 3.5로 수정해야 한다..)
+: 파이참의 C:/Users/[PC유저명]/PycharmProjexts/showAttendTell 프로젝트 폴더 내의 resize.py 파일
+-> 깃헙의 imgResize.py 수정함
+
+(3) 새로운 모델로 갈아타기 위해 jazzsaxmafia의 깃헙으로 들어감
+-> cnn_util.py부터 시작해야 하는데 여기선 또 caffe가 필요하다...(설치 과정이 매우 복잡)
+-> 그냥 (2)로 돌아가서 전부 3.5용 코드로 바꾸는 작업을 진행하는게 더 빠르겠다 싶어짐
+
+(4) 
+
+=================================
+<82 작업내용>
+
+(1) 구글 클라우드 VM 인스턴스 생성함 (신한카드로 결제 연동)
+(2) puTTy로 kegen함 - Key comment는 [계정명] Key passphrase는 programmerfromhell
+(3) 생성된 key는 내 호루라기 usb 졸업작품 폴더 내에 저장해둠
+(4) puTTy로 접속해봄 -성공
+(5) VM의 SSH로 접속해서 파이썬 설치 시작
+- 이미 2.7.6 버전이 깔려 있었음
+- sudo apt-get install python-pip python-dev python-setuptools
+(6) 프로젝트 작업 위한 디렉토리 생성
+- 저번 시종설 플젝때와는 다르게 가상머신이 아예 깨끗하게 폴더 하나 없길래 직접 Home/downloads 만듬
+(7) virtualenv 설치 시작
+- sudo apt-get update
+- sudo apt-get install python-virtualenv
+- virtualenv --system-site-packages -p python2 ~/tensorflow
+- 접속은 source ~/tensorflow/bin/activate
+- 종료는 deactivate
+(8) 텐서플로우 업그레이드
+easy_install -U pip
+pip install --upgrade tensorflow
+(9) gcloud에서 VM으로 파일 오갈수 있게 설정
+API json 파일 위치 : D:\졸업작품\graduation-531ca8c7e0e4.json
+set GOOGLE_APPLICATION_CREDENTIALS="D:\졸업작품\graduation-531ca8c7e0e4.json"
+gcloud compute --project "graduation" ssh --zone "asia-northeast1-b" "vm"
+!!!!! 여기서 자꾸 오류남.. gcloud auth login 해도 오류남ㅠㅠㅠㅠ
+(10) 위에서 오류나도 파일 오가는거 되는지 확인
+gcloud compute scp --zone us-east1-b C:/Users/[PC유저명]/Desktop/git_uploaded/imgResize.py [계정명]@vm:/home/[계정명]/downloads
+입력했더니 다음처럼 나옴
+
+WARNING: The public SSH key file for gcloud does not exist.
+WARNING: The private SSH key file for gcloud does not exist.
+WARNING: You do not have an SSH key for gcloud.
+WARNING: SSH keygen will be executed to generate a key.
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/[계정명]/.ssh/google_compute_engine.
+Your public key has been saved in /home/[계정명]/.ssh/google_compute_engine.pub.
+The key fingerprint is:
+94:ec:5c:3a:2d:be:97:e6:e9:76:be:7b:5c:be:ce:94 [계정명]@vm
+The key's randomart image is:
++--[ RSA 2048]----+
+|                 |
+|       . .       |
+|        + .      |
+|       + +       |
+|        S .      |
+|       . o      o|
+|        .  . . E |
+|         .=.. = .|
+|        .*+o++.+.|
++-----------------+
+ERROR: (gcloud.compute.scp) All sources must be local files when destination is remote.  Got sources: [C:UsersMinyeong, LeeDesktopgit_uploadedimgResize.py], destination: [계정명]@vm:/home/[계정명]/downloads
+
+passphrase는 똑같이 programmerfromhell 로 입력함
+그리고 경로명을 아래처럼 바꿈
+gcloud compute scp --zone us-east1-b "C:/Users/[PC유저명]/Desktop/git_uploaded/imgResize.py" [계정명]@vm:/home/[계정명]/downloads
+
+(10) 다시 설정 : 프로젝트 id를 잘못 입력해서 발생한 오류같음(graduation 이 아니라 graduation-212022 였음)
+gcloud init
+gcloud compute --project "graduation-212022" ssh --zone "asia-northeast1-b" "vm"
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PC유저명]/Desktop/git_uploaded/imgResize.py" [계정명]@vm:/home/[계정명]/downloads
+!!! 성공 !!!
+
+(11) 본격 데이터 업로드 시작(소규모) => 시간 조금 걸림
+샘플링한 데이터 경로: C:/Users/[PC유저명]/Downloads/sample_flickr30k/data.zip (train과 val 폴더로 저장됨)
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PC유저명]/Downloads/sample_flickr30k/data.zip" [계정명]@vm:/home/[계정명]/downloads/data
+
+(12) 코드 업로드
+resize.py: 
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PC유저명]/Desktop/git_uploaded/imgResize.py" [계정명]@vm:/home/[계정명]/downloads/code
+python ~/downloads/code/imgResize.py
+!!! 이미지 리사이징 완료 !!!
+
+(13) 코드 수정
+
+
+===============================================
+(1) vgg19 모델 미리 학습된걸 다운받음
+: wget http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat -P data/
+
+(2) 코드 따라서 csv 파일을 json 파일로 바꿈 (csv_to_json.py) - 파이참 사용
+
+(3) imgPrepro.py 이제 실행되도록 수정할 차례.
+-> train이랑 val이랑 캡션 json 파일 구분해서 별도로 만들어야 함 (코드에서 그러고 있으므로)
+
+
+
+===============================================
+(1) 코드에 맞추기 위해 train/val 데이터셋에 맞게 캡션도 별도의 csv 파일로 나누는 작업 - 파이참
+: 'D:/졸업작품/token_300imgs_test' & 'D:/졸업작품/token_300imgs_val'
+
+(2) 코드에 맞추기 위해 (1)의 csv 파일들을 json 파일로 변환함 - 파이참
+: C:\Users\[PC유저명]\PycharmProjects\showAttendTell 폴더 내에 있음.
+
+(3) prepro 수정 완료함 - notepad++
+: 경로 수정이 대부분.
+
+(4) GCP VM에 필요한 디렉토리 mkdir - GCP
+:  /home/[계정명]/downloads/data/train/ & /home/[계정명]/downloads/data/val/ & /home/[계정명]/downloads/data/test/
+
+(5) imgPrepro.py / core_utils.py / core_vggnet.py 업로드 - Google SDK
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PC유저명]/Desktop/git_uploaded/imgPrepro.py" [계정명]@vm:/home/[계정명]/downloads/code
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PC유저명]/Desktop/git_uploaded/core_utils.py" [계정명]@vm:/home/[계정명]/downloads/code
+(이때 SDK 업데이트 있다고 해서 잠시 업데이트 진행합 212.00버전인가로)
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PC유저명]/Desktop/git_uploaded/core_vggnet.py" [계정명]@vm:/home/[계정명]/downloads/code
+
+(6) json 파일들 업로드하기 -Google SDK
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PC유저명]\PycharmProjects\showAttendTell\token_3000imgs_train.json" [계정명]@vm:/home/[계정명]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PC유저명]\PycharmProjects\showAttendTell\token_3000imgs_val.json" [계정명]@vm:/home/[계정명]/downloads/data
+
+(7) imgPrepro 실행시켜보기 - GCP VM
+python ~/downloads/code/imgPrepro.py
+pip install pandas
+python ~/downloads/code/imgPrepro.py
+
+(8) imgPrepro 오류 해결하기
+(오류내용)
+Traceback (most recent call last):
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 223, in <module>
+    main()
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 146, in main
+    max_length=max_length)
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
+    id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
+TypeError: list indices must be integers, not str
+(오류내용 끝)
+
+-> 파이참으로 직접 찍어보면서 해결하기 위해 papago_trans 플젝폴더 내의 preproTest.py 파일로 실험 시작
+-> 내가 만든 csv 캡션 파일을 json으로 변환했을 때의 형태와 코드에서 사용하는 json의 형태가 다르다는 것을 깨달음
+-> 코드 수정이 필요
+->https://github.com/tylin/coco-caption 에서 직접 coco-caption이 어떤 형태인지 파악하기 위해 접근
+->http://cocodataset.org/#download 로 들어가서 용량이 가장 작은(1GB짜리) 데이터셋을 받아봄
+-> 이건 그냥 이미지셋이길래 왜인지 짝궁같은 241MB짜리 annotations 파일을 받아봄
+-> 그냥 엑셀로 열었더니 형태 파악이 잘 안되길래 preproTest.py를 통해 열어봄
+-> {'image_id': 570169, 'id': 691760, 'caption': 'a brown teddy bear and some wooden block toys'} 형태가 반복
+*참고로 image_id가 파일명, id는 뭔지 모르겠고 caption이 학습시킬 애
+-> 반면 내 json은 {'eng':'영문캡션', 'id':'1234567', 'kor':'한글캡션'} 형태가 반복...
+-> 오류 해결 위해 _process_caption_data 함수만 가져옴
+(오류)
+"C:\Users\[PC유저명]\PycharmProjects\papago_trans\venv\Scripts\python.exe" "C:/Users/[PC유저명]/PycharmProjects/papago_trans/preproTest.py"
+C:/Users/[PC유저명]/PycharmProjects/papago_trans/preproTest.py:53: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+  caption_data.set_value(i, 'caption', caption.lower())
+Traceback (most recent call last):
+  File "C:/Users/[PC유저명]/PycharmProjects/papago_trans/preproTest.py", line 60, in <module>
+    caption_data = caption_data.drop(caption_data.index[del_idx])
+  File "C:\Users\[PC유저명]\PycharmProjects\papago_trans\venv\lib\site-packages\pandas\core\indexes\base.py", line 2095, in __getitem__
+    result = getitem(key)
+IndexError: index 1087 is out of bounds for axis 0 with size 1084
+
+Process finished with exit code 1
+(오류내용 끝)
+-> index 1087은 다음과 같다
+1087
+A woman in a short black dress is holding a champagne flute and standing in front of a refrigerator
+???뭐가 문제일까...
+-> 단순 들여쓰기 오류였던걸로.. indent 고치니까 잘 돌아간다
+
+
+============================================================================
+(1)일단 임시로 수정한 caption 파일들(.csv)을 json 형식으로 바꾼다.
+C:/Users/[PC유저명]/PycharmPRojects/papago_trans/csv_to_json.py 를 이용
+ 
+(2)그리고 그 json 파일들을 다시 서버로 업로드
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PC유저명]\PycharmProjects\showAttendTell\token_3000imgs_val_revised.json" [계정명]@vm:/home/[계정명]/downloads/data
+
+(잠시 gcloud components update 실행함)
+
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PC유저명]\PycharmProjects\showAttendTell\token_3000imgs_train_revised.json" [계정명]@vm:/home/[계정명]/downloads/data
+
+(3) imgPrepro.py에서 .json 파일들의 파일명을 _revised.json 으로 바꾸고 서버에 다시 imgPrepro.py를 업로드한다
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PC유저명]/Desktop/git_uploaded/imgPrepro.py" [계정명]@vm:/home/[계정명]/downloads/code
+
+(4) 다시 python ~/downloads/code/imgPrepro.py
+
+(5) 아이고 source ~/tensorflow/bin/activate 까먹었다
+
+(6) 실행 시작했더니 찍힌 것
+(시작)
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/linalg/basic.py:17: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._solve_toeplitz import levinson
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/linalg/__init__.py:207: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._decomp_update import *
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/special/__init__.py:640: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._ufuncs import *
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/special/_ellip_harm.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._ellip_harm_2 import _ellipsoid, _ellipsoid_norm
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/interpolate/_bsplines.py:10: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from . import _bspl
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/lil.py:19: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from . import _csparsetools
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:165: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._shortest_path import shortest_path, floyd_warshall, dijkstra,\
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/_validation.py:5: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._tools import csgraph_to_dense, csgraph_from_dense,\
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:167: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._traversal import breadth_first_order, depth_first_order, \
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:169: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._min_spanning_tree import minimum_spanning_tree
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:170: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._reordering import reverse_cuthill_mckee, maximum_bipartite_matching, \
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/__init__.py:95: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from .ckdtree import *
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/__init__.py:96: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from .qhull import *
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/_spherical_voronoi.py:18: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from . import _voronoi
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/distance.py:122: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from . import _hausdorff
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/ndimage/measurements.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from . import _ni_label
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/h5py/__init__.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from ._conv import register_converters as _register_converters
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/h5py/__init__.py:45: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from . import h5a, h5d, h5ds, h5f, h5fd, h5g, h5r, h5s, h5t, h5p, h5z
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/h5py/_hl/group.py:22: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from .. import h5g, h5i, h5o, h5r, h5t, h5l, h5p
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/_libs/__init__.py:4: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from .tslib import iNaT, NaT, Timestamp, Timedelta, OutOfBoundsDatetime
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/__init__.py:26: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import (hashtable as _hashtable,
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/dtypes/common.py:6: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import algos, lib
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/util/hashing.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import hashing, tslib
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/indexes/base.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import (lib, index as libindex, tslib as libts,
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/tseries/offsets.py:21: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  import pandas._libs.tslibs.offsets as liboffsets
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/ops.py:16: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import algos as libalgos, ops as libops
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/indexes/interval.py:32: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs.interval import (
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/internals.py:14: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import internals as libinternals
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/sparse/array.py:33: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  import pandas._libs.sparse as splib
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/window.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  import pandas._libs.window as _window
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/groupby/groupby.py:68: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import (lib, reduction,
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/core/reshape/reshape.py:30: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import algos as _algos, reshape as _reshape
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/io/parsers.py:45: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  import pandas._libs.parsers as parsers
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/pandas/io/pytables.py:50: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from pandas._libs import algos, lib, writers as libwriters
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio4.py:18: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from .mio_utils import squeeze_element, chars_to_strings
+/home/[계정명]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio5.py:98: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  from .mio5_utils import VarReader5
+Traceback (most recent call last):
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 223, in <module>
+    main()
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 146, in main
+    max_length=max_length)
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
+    id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
+TypeError: list indices must be integers, not str
+(끝) -> 어떻게 해결할 것인지
+-> 찾아보니 scipy 라이브러리에서 나타나는 실행 경고라는데(https://hiseon.me/2018/03/05/tensorflow-errors/)
+$ pip install numpy==1.14.5 --upgrade
+$ pip install setuptools==39.1.0 --upgrade
+등의  명령을 통해 특정 버전으로 커스터마이징을 해야 제대로 작동할 거라고 들음
+->pip freeze 를 통해 모든 모듈의 버전을 확인한 결과
+absl-py==0.3.0
+apt-xapian-index==0.45
+astor==0.7.1
+backports.functools-lru-cache==1.5
+backports.weakref==1.0.post1
+boto==2.20.1
+chardet==2.0.1
+Cheetah==2.4.4
+cloud-init==0.7.5
+cloudpickle==0.5.3
+colorama==0.2.5
+configobj==4.7.2
+crcmod==1.7
+cycler==0.10.0
+dask==0.18.2
+decorator==4.3.0
+enum34==1.1.6
+funcsigs==1.0.2
+futures==3.2.0
+gast==0.2.0
+google-compute-engine==2.8.2
+grpcio==1.13.0
+h5py==2.8.0
+hickle==3.2.2
+html5lib==0.999
+jsonpatch==1.3
+jsonpointer==1.0
+kiwisolver==1.0.1
+Landscape-Client==14.12
+Markdown==2.6.11
+matplotlib==2.2.3
+mock==2.0.0
+networkx==2.1
+numpy==1.15.0
+oauth==1.0.1
+PAM==0.4.2
+pandas==0.23.4
+pbr==4.2.0
+Pillow==5.2.0
+prettytable==0.7.2
+protobuf==3.6.0
+pycurl==7.19.3
+pyOpenSSL==0.13
+pyparsing==2.2.0
+pyserial==2.6
+python-apt===0.9.3.5ubuntu3
+python-dateutil==2.7.3
+python-debian===0.1.21-nmu2ubuntu2
+pytz==2018.5
+PyWavelets==0.5.2
+PyYAML==3.10
+requests==2.2.1
+scikit-image==0.14.0
+scipy==1.1.0
+six==1.11.0
+ssh-import-id==3.21
+subprocess32==3.5.2
+tensorboard==1.9.0
+tensorflow==1.9.0
+termcolor==1.1.0
+toolz==0.9.0
+Twisted-Core==13.2.0
+Twisted-Names==13.2.0
+Twisted-Web==13.2.0
+urllib3==1.7.1
+virtualenv==1.11.4
+Werkzeug==0.14.1
+zope.interface==4.0.5
+->
+scipy==1.1.0
+tensorboard==1.9.0
+tensorflow==1.9.0
+numpy==1.15.0
+
+시도해보기 시작함
+pip install scipy==1.0.1 --upgrade
+python ~/downloads/code/imgPrepro.py
+pip install numpy==1.14.5 --upgrade
+
+***numpy 버전을 1.14.5로 바꿨더니 저 위에 길게 출력됐던 오류 라인이 더 이상 출력되지 않는 것을 확인.
+확실히 하기 위해 scipy 버전을 다시 원래대로 돌린다. (1.1.0으로)
+pip install scipy --upgrade
+그랬더니 다시 제대로 돌아감 -> 즉 문제는 numpy 버전이었던 것으로 판명!
+그러나 여전히 남아 있는 오류
+(오류 시작)
+Traceback (most recent call last):
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 223, in <module>
+    main()
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 146, in main
+    max_length=max_length)
+  File "/home/[계정명]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
+    id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
+TypeError: list indices must be integers, not str
+(오류 끝)
+-> 읽어볼만:https://blog.naver.com/chumy/220542543520
+
+그런데 이거 해결하기 전에 다른 오류가 생김 csv to json 하는데 알고보니 어느 시점부터 한글이 다 깨지고 있었다 헐...
+한글 깨짐 오류부터 해결 시작
+-> sys.setdefaultencoding('utf-8')은 python3.xx 부터는 아무 소용이 없다고 함
+-> #-*- coding: utf-8 -*- 도 아무 소용이 없음
+-> encoding='utf-8' 했는데도 무소용
+-> json.dumps()에서 ensure_ascii=False 했는데도 무소용
+
+결국 그냥 csv를 json으로 변환해주는 사이트를 찾아서 거길 사용함
+->http://www.convertcsv.com/csv-to-json.htm
+-> notepad++로 열면 한글 그대로 잘 나오는데 엑셀로 열면 한글이 다 깨져 보인다.. 일단 이대로 넘어가는걸로 다른게 더 급하니까
+
+다시 imgPrepro로 돌아가봤지만 여전히 동일한 오류 발생
+그래서 PyCharm에 vmTest 플젝 python 2.7 환경으로 새로 만들고 여기서 계속 테스트 할 예정
+
+C:/Users/[PC유저명]/PycharmProjects/showAttendTell/
+
+C:/Users/[PC유저명]/Downloads/sample_flickr30k/
+
+gcloud compute scp --zone asia-northeast1-b [계정명]@vm:/home/[계정명]/data/imagenet-vgg-verydeep-19.mat "C:/Users/[PC유저명]/PycharmProjects/showAttendTell/"
+아 윈도우에선 python 3.xx부터만 tensorflow 지원해준다는걸 자꾸 잊는다
+그냥 다시 원래 하던대로 VM에서 계속 작업해야겠다
+
+===========================================================================================
+id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
+-> 이 라인에서 자꾸 오류 나던걸 어느 정도 해결함
+-> id_to_filename = {image['id']: image['file_name'] for image in caption_data} 로 바꾸니 해결
+(print(caption_data[1]) 해봤더니 {'image_id': 1000092795, 'id': 1, 'kor': '머리 숱이 많은 두 청년이 마당에 걸어 다니면서 손을 뻗는다.'}가 출력
+-> 알고보니 caption_data는 list라 dictionary처럼 key값으로 원소에 접근할 수 있는게 아닌데 자꾸 []로 키값으로 접근하려고 해서 오류가 났던것.
+
+아.. 그런데 나는 image_id를 파일 명을 지칭하는 col의 이름으로 썼는데 imgPrepro.py 파일에서는 다른 용도로 지정한 변수라서
+캡션 저장해둔 파일인 .csv 파일에 col명 바꾸고 다 다시 .json 으로 변환해야 할듯ㅠㅠㅠㅠㅠ
+
+=====================================================================================
+
+json으로 변환 완료
+line 40 오류 (또 리스트인데 딕셔너리처럼 키값으로 찾게 해둬서 그런듯)
+imgPrepro.py line 40(은 바로 for annotation in caption_data['annotations']: )부터 고치는걸 imgPrepro2.py로 파생 파일을 만든다.
+
+=====================================================================================
+시도 1. file_name을 image_id로 바꾸면?
+-바꾼 파일 token_3000imgs_val_revised_f2.json 과 token_3000imgs_train_revised_f2.json을 준비
+-이를 VM에 다시 업로드
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PC유저명]/PycharmProjects/showAttendTell/token_3000imgs_val_revised_f2.json" [계정명]@vm:/home/[계정명]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PC유저명]\PycharmProjects\showAttendTell\token_3000imgs_train_revised_f2.json" [계정명]@vm:/home/[계정명]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PC유저명]\PycharmProjects\showAttendTell\token_3000imgs_train_revised_f2.json" [계정명]@vm:/home/[계정명]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PC유저명]\Desktop\git_uploaded\imgPrepro2.py" [계정명]@vm:/home/[계정명]/downloads/code
+-실행시켜보니 다음과 같은 오류 발생
+(오류내용)
+Traceback (most recent call last):
+  File "/home/[계정명]/downloads/code/imgPrepro2.py", line 224, in <module>
+    main()
+  File "/home/[계정명]/downloads/code/imgPrepro2.py", line 147, in main
+    max_length=max_length)
+  File "/home/[계정명]/downloads/code/imgPrepro2.py", line 31, in _process_caption_data
+    annotation['file_name'] = os.path.join(image_dir, id_to_filename[image_id])
+KeyError: 1000092795
+(오류내용 끝)
+
