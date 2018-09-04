@@ -1,52 +1,52 @@
-< ÀÌÀü ³»¿ëÀº ±êÇé Âü°íÇØ¾ß ÇÒµí >
+< ì´ì „ ë‚´ìš©ì€ ê¹ƒí—™ ì°¸ê³ í•´ì•¼ í• ë“¯ >
 
 ================================================================================================
-< 727 ÀÛ¾÷³»¿ë >
+< 727 ì‘ì—…ë‚´ìš© >
 
-(1) ÀüÃ¼ µ¥ÀÌÅÍ¼Â¿¡¼­ Æ¯Á¤ ÀÌ¹ÌÁö¸¸ »Ì¾Æ¿Ã ¼ö ÀÖ°Ô ±¸ÇöÇÔ
-: ÆÄÀÌÂüÀÇ C:/Users/[PCÀ¯Àú¸í]/PycharmProjexts/papago_trans ÇÁ·ÎÁ§Æ® Æú´õ ³»ÀÇ save6000.py ÆÄÀÏ
--> ±êÇéÀÇ extractImg.py ·Î ¾÷·ÎµåÇÔ
+(1) ì „ì²´ ë°ì´í„°ì…‹ì—ì„œ íŠ¹ì • ì´ë¯¸ì§€ë§Œ ë½‘ì•„ì˜¬ ìˆ˜ ìˆê²Œ êµ¬í˜„í•¨
+: íŒŒì´ì°¸ì˜ C:/Users/[PCìœ ì €ëª…]/PycharmProjexts/papago_trans í”„ë¡œì íŠ¸ í´ë” ë‚´ì˜ save6000.py íŒŒì¼
+-> ê¹ƒí—™ì˜ extractImg.py ë¡œ ì—…ë¡œë“œí•¨
 
-(2) ÀÌ¹ÌÁö ¸®»çÀÌÂ¡ ºÎºĞ ±¸ÇöÇÏ°íÀÚ ÇßÀ¸³ª, ±¸ÇÑ ÄÚµå¿¡¼­´Â Python 2.7À» ¾²´Âµ¥ ¹®Á¦´Â Windows¿¡¼­ 2.7ÀÇ tensorflow¸¦ Á¦°øÇÏÁö ¾Ê´Â´Ù.
-µû¶ó¼­ ÀÌ ÄÚµå´Â ÀÏ´Ü ½á¸ÔÀ» ¼ö ¾ø°Ô µÆ´Ù. (2.7À» 3.5·Î ¼öÁ¤ÇÏ±â ½ÃÀÛÇÏ¸é ³ª¸ÓÁöµµ ÀüºÎ ´Ù 3.5·Î ¼öÁ¤ÇØ¾ß ÇÑ´Ù..)
-: ÆÄÀÌÂüÀÇ C:/Users/[PCÀ¯Àú¸í]/PycharmProjexts/showAttendTell ÇÁ·ÎÁ§Æ® Æú´õ ³»ÀÇ resize.py ÆÄÀÏ
--> ±êÇéÀÇ imgResize.py ¼öÁ¤ÇÔ
+(2) ì´ë¯¸ì§€ ë¦¬ì‚¬ì´ì§• ë¶€ë¶„ êµ¬í˜„í•˜ê³ ì í–ˆìœ¼ë‚˜, êµ¬í•œ ì½”ë“œì—ì„œëŠ” Python 2.7ì„ ì“°ëŠ”ë° ë¬¸ì œëŠ” Windowsì—ì„œ 2.7ì˜ tensorflowë¥¼ ì œê³µí•˜ì§€ ì•ŠëŠ”ë‹¤.
+ë”°ë¼ì„œ ì´ ì½”ë“œëŠ” ì¼ë‹¨ ì¨ë¨¹ì„ ìˆ˜ ì—†ê²Œ ëë‹¤. (2.7ì„ 3.5ë¡œ ìˆ˜ì •í•˜ê¸° ì‹œì‘í•˜ë©´ ë‚˜ë¨¸ì§€ë„ ì „ë¶€ ë‹¤ 3.5ë¡œ ìˆ˜ì •í•´ì•¼ í•œë‹¤..)
+: íŒŒì´ì°¸ì˜ C:/Users/[PCìœ ì €ëª…]/PycharmProjexts/showAttendTell í”„ë¡œì íŠ¸ í´ë” ë‚´ì˜ resize.py íŒŒì¼
+-> ê¹ƒí—™ì˜ imgResize.py ìˆ˜ì •í•¨
 
-(3) »õ·Î¿î ¸ğµ¨·Î °¥¾ÆÅ¸±â À§ÇØ jazzsaxmafiaÀÇ ±êÇéÀ¸·Î µé¾î°¨
--> cnn_util.pyºÎÅÍ ½ÃÀÛÇØ¾ß ÇÏ´Âµ¥ ¿©±â¼± ¶Ç caffe°¡ ÇÊ¿äÇÏ´Ù...(¼³Ä¡ °úÁ¤ÀÌ ¸Å¿ì º¹Àâ)
--> ±×³É (2)·Î µ¹¾Æ°¡¼­ ÀüºÎ 3.5¿ë ÄÚµå·Î ¹Ù²Ù´Â ÀÛ¾÷À» ÁøÇàÇÏ´Â°Ô ´õ ºü¸£°Ú´Ù ½Í¾îÁü
+(3) ìƒˆë¡œìš´ ëª¨ë¸ë¡œ ê°ˆì•„íƒ€ê¸° ìœ„í•´ jazzsaxmafiaì˜ ê¹ƒí—™ìœ¼ë¡œ ë“¤ì–´ê°
+-> cnn_util.pyë¶€í„° ì‹œì‘í•´ì•¼ í•˜ëŠ”ë° ì—¬ê¸°ì„  ë˜ caffeê°€ í•„ìš”í•˜ë‹¤...(ì„¤ì¹˜ ê³¼ì •ì´ ë§¤ìš° ë³µì¡)
+-> ê·¸ëƒ¥ (2)ë¡œ ëŒì•„ê°€ì„œ ì „ë¶€ 3.5ìš© ì½”ë“œë¡œ ë°”ê¾¸ëŠ” ì‘ì—…ì„ ì§„í–‰í•˜ëŠ”ê²Œ ë” ë¹ ë¥´ê² ë‹¤ ì‹¶ì–´ì§
 
 (4) 
 
 =================================
-<82 ÀÛ¾÷³»¿ë>
+<82 ì‘ì—…ë‚´ìš©>
 
-(1) ±¸±Û Å¬¶ó¿ìµå VM ÀÎ½ºÅÏ½º »ı¼ºÇÔ (½ÅÇÑÄ«µå·Î °áÁ¦ ¿¬µ¿)
-(2) puTTy·Î kegenÇÔ - Key comment´Â [°èÁ¤¸í] Key passphrase´Â programmerfromhell
-(3) »ı¼ºµÈ key´Â ³» È£·ç¶ó±â usb Á¹¾÷ÀÛÇ° Æú´õ ³»¿¡ ÀúÀåÇØµÒ
-(4) puTTy·Î Á¢¼ÓÇØº½ -¼º°ø
-(5) VMÀÇ SSH·Î Á¢¼ÓÇØ¼­ ÆÄÀÌ½ã ¼³Ä¡ ½ÃÀÛ
-- ÀÌ¹Ì 2.7.6 ¹öÀüÀÌ ±ò·Á ÀÖ¾úÀ½
+(1) êµ¬ê¸€ í´ë¼ìš°ë“œ VM ì¸ìŠ¤í„´ìŠ¤ ìƒì„±í•¨ (ì‹ í•œì¹´ë“œë¡œ ê²°ì œ ì—°ë™)
+(2) puTTyë¡œ kegení•¨ - Key commentëŠ” [ê³„ì •ëª…] Key passphraseëŠ” programmerfromhell
+(3) ìƒì„±ëœ keyëŠ” ë‚´ í˜¸ë£¨ë¼ê¸° usb ì¡¸ì—…ì‘í’ˆ í´ë” ë‚´ì— ì €ì¥í•´ë‘ 
+(4) puTTyë¡œ ì ‘ì†í•´ë´„ -ì„±ê³µ
+(5) VMì˜ SSHë¡œ ì ‘ì†í•´ì„œ íŒŒì´ì¬ ì„¤ì¹˜ ì‹œì‘
+- ì´ë¯¸ 2.7.6 ë²„ì „ì´ ê¹”ë ¤ ìˆì—ˆìŒ
 - sudo apt-get install python-pip python-dev python-setuptools
-(6) ÇÁ·ÎÁ§Æ® ÀÛ¾÷ À§ÇÑ µğ·ºÅä¸® »ı¼º
-- Àú¹ø ½ÃÁ¾¼³ ÇÃÁ§¶§¿Í´Â ´Ù¸£°Ô °¡»ó¸Ó½ÅÀÌ ¾Æ¿¹ ±ú²ıÇÏ°Ô Æú´õ ÇÏ³ª ¾ø±æ·¡ Á÷Á¢ Home/downloads ¸¸µë
-(7) virtualenv ¼³Ä¡ ½ÃÀÛ
+(6) í”„ë¡œì íŠ¸ ì‘ì—… ìœ„í•œ ë””ë ‰í† ë¦¬ ìƒì„±
+- ì €ë²ˆ ì‹œì¢…ì„¤ í”Œì ë•Œì™€ëŠ” ë‹¤ë¥´ê²Œ ê°€ìƒë¨¸ì‹ ì´ ì•„ì˜ˆ ê¹¨ë—í•˜ê²Œ í´ë” í•˜ë‚˜ ì—†ê¸¸ë˜ ì§ì ‘ Home/downloads ë§Œë“¬
+(7) virtualenv ì„¤ì¹˜ ì‹œì‘
 - sudo apt-get update
 - sudo apt-get install python-virtualenv
 - virtualenv --system-site-packages -p python2 ~/tensorflow
-- Á¢¼ÓÀº source ~/tensorflow/bin/activate
-- Á¾·á´Â deactivate
-(8) ÅÙ¼­ÇÃ·Î¿ì ¾÷±×·¹ÀÌµå
+- ì ‘ì†ì€ source ~/tensorflow/bin/activate
+- ì¢…ë£ŒëŠ” deactivate
+(8) í…ì„œí”Œë¡œìš° ì—…ê·¸ë ˆì´ë“œ
 easy_install -U pip
 pip install --upgrade tensorflow
-(9) gcloud¿¡¼­ VMÀ¸·Î ÆÄÀÏ ¿À°¥¼ö ÀÖ°Ô ¼³Á¤
-API json ÆÄÀÏ À§Ä¡ : D:\Á¹¾÷ÀÛÇ°\graduation-531ca8c7e0e4.json
-set GOOGLE_APPLICATION_CREDENTIALS="D:\Á¹¾÷ÀÛÇ°\graduation-531ca8c7e0e4.json"
+(9) gcloudì—ì„œ VMìœ¼ë¡œ íŒŒì¼ ì˜¤ê°ˆìˆ˜ ìˆê²Œ ì„¤ì •
+API json íŒŒì¼ ìœ„ì¹˜ : D:\ì¡¸ì—…ì‘í’ˆ\graduation-531ca8c7e0e4.json
+set GOOGLE_APPLICATION_CREDENTIALS="D:\ì¡¸ì—…ì‘í’ˆ\graduation-531ca8c7e0e4.json"
 gcloud compute --project "graduation" ssh --zone "asia-northeast1-b" "vm"
-!!!!! ¿©±â¼­ ÀÚ²Ù ¿À·ù³².. gcloud auth login ÇØµµ ¿À·ù³²¤Ğ¤Ğ¤Ğ¤Ğ
-(10) À§¿¡¼­ ¿À·ù³ªµµ ÆÄÀÏ ¿À°¡´Â°Å µÇ´ÂÁö È®ÀÎ
-gcloud compute scp --zone us-east1-b C:/Users/[PCÀ¯Àú¸í]/Desktop/git_uploaded/imgResize.py [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads
-ÀÔ·ÂÇß´õ´Ï ´ÙÀ½Ã³·³ ³ª¿È
+!!!!! ì—¬ê¸°ì„œ ìê¾¸ ì˜¤ë¥˜ë‚¨.. gcloud auth login í•´ë„ ì˜¤ë¥˜ë‚¨ã… ã… ã… ã… 
+(10) ìœ„ì—ì„œ ì˜¤ë¥˜ë‚˜ë„ íŒŒì¼ ì˜¤ê°€ëŠ”ê±° ë˜ëŠ”ì§€ í™•ì¸
+gcloud compute scp --zone us-east1-b C:/Users/[PCìœ ì €ëª…]/Desktop/git_uploaded/imgResize.py [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads
+ì…ë ¥í–ˆë”ë‹ˆ ë‹¤ìŒì²˜ëŸ¼ ë‚˜ì˜´
 
 WARNING: The public SSH key file for gcloud does not exist.
 WARNING: The private SSH key file for gcloud does not exist.
@@ -55,10 +55,10 @@ WARNING: SSH keygen will be executed to generate a key.
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again: 
-Your identification has been saved in /home/[°èÁ¤¸í]/.ssh/google_compute_engine.
-Your public key has been saved in /home/[°èÁ¤¸í]/.ssh/google_compute_engine.pub.
+Your identification has been saved in /home/[ê³„ì •ëª…]/.ssh/google_compute_engine.
+Your public key has been saved in /home/[ê³„ì •ëª…]/.ssh/google_compute_engine.pub.
 The key fingerprint is:
-94:ec:5c:3a:2d:be:97:e6:e9:76:be:7b:5c:be:ce:94 [°èÁ¤¸í]@vm
+94:ec:5c:3a:2d:be:97:e6:e9:76:be:7b:5c:be:ce:94 [ê³„ì •ëª…]@vm
 The key's randomart image is:
 +--[ RSA 2048]----+
 |                 |
@@ -71,219 +71,219 @@ The key's randomart image is:
 |         .=.. = .|
 |        .*+o++.+.|
 +-----------------+
-ERROR: (gcloud.compute.scp) All sources must be local files when destination is remote.  Got sources: [C:UsersMinyeong, LeeDesktopgit_uploadedimgResize.py], destination: [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads
+ERROR: (gcloud.compute.scp) All sources must be local files when destination is remote.  Got sources: [C:UsersMinyeong, LeeDesktopgit_uploadedimgResize.py], destination: [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads
 
-passphrase´Â ¶È°°ÀÌ programmerfromhell ·Î ÀÔ·ÂÇÔ
-±×¸®°í °æ·Î¸íÀ» ¾Æ·¡Ã³·³ ¹Ù²Ş
-gcloud compute scp --zone us-east1-b "C:/Users/[PCÀ¯Àú¸í]/Desktop/git_uploaded/imgResize.py" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads
+passphraseëŠ” ë˜‘ê°™ì´ programmerfromhell ë¡œ ì…ë ¥í•¨
+ê·¸ë¦¬ê³  ê²½ë¡œëª…ì„ ì•„ë˜ì²˜ëŸ¼ ë°”ê¿ˆ
+gcloud compute scp --zone us-east1-b "C:/Users/[PCìœ ì €ëª…]/Desktop/git_uploaded/imgResize.py" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads
 
-(10) ´Ù½Ã ¼³Á¤ : ÇÁ·ÎÁ§Æ® id¸¦ Àß¸ø ÀÔ·ÂÇØ¼­ ¹ß»ıÇÑ ¿À·ù°°À½(graduation ÀÌ ¾Æ´Ï¶ó graduation-212022 ¿´À½)
+(10) ë‹¤ì‹œ ì„¤ì • : í”„ë¡œì íŠ¸ idë¥¼ ì˜ëª» ì…ë ¥í•´ì„œ ë°œìƒí•œ ì˜¤ë¥˜ê°™ìŒ(graduation ì´ ì•„ë‹ˆë¼ graduation-212022 ì˜€ìŒ)
 gcloud init
 gcloud compute --project "graduation-212022" ssh --zone "asia-northeast1-b" "vm"
-gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCÀ¯Àú¸í]/Desktop/git_uploaded/imgResize.py" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads
-!!! ¼º°ø !!!
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCìœ ì €ëª…]/Desktop/git_uploaded/imgResize.py" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads
+!!! ì„±ê³µ !!!
 
-(11) º»°İ µ¥ÀÌÅÍ ¾÷·Îµå ½ÃÀÛ(¼Ò±Ô¸ğ) => ½Ã°£ Á¶±İ °É¸²
-»ùÇÃ¸µÇÑ µ¥ÀÌÅÍ °æ·Î: C:/Users/[PCÀ¯Àú¸í]/Downloads/sample_flickr30k/data.zip (train°ú val Æú´õ·Î ÀúÀåµÊ)
-gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCÀ¯Àú¸í]/Downloads/sample_flickr30k/data.zip" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/data
+(11) ë³¸ê²© ë°ì´í„° ì—…ë¡œë“œ ì‹œì‘(ì†Œê·œëª¨) => ì‹œê°„ ì¡°ê¸ˆ ê±¸ë¦¼
+ìƒ˜í”Œë§í•œ ë°ì´í„° ê²½ë¡œ: C:/Users/[PCìœ ì €ëª…]/Downloads/sample_flickr30k/data.zip (trainê³¼ val í´ë”ë¡œ ì €ì¥ë¨)
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCìœ ì €ëª…]/Downloads/sample_flickr30k/data.zip" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/data
 
-(12) ÄÚµå ¾÷·Îµå
+(12) ì½”ë“œ ì—…ë¡œë“œ
 resize.py: 
-gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCÀ¯Àú¸í]/Desktop/git_uploaded/imgResize.py" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/code
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCìœ ì €ëª…]/Desktop/git_uploaded/imgResize.py" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/code
 python ~/downloads/code/imgResize.py
-!!! ÀÌ¹ÌÁö ¸®»çÀÌÂ¡ ¿Ï·á !!!
+!!! ì´ë¯¸ì§€ ë¦¬ì‚¬ì´ì§• ì™„ë£Œ !!!
 
-(13) ÄÚµå ¼öÁ¤
+(13) ì½”ë“œ ìˆ˜ì •
 
 
 ===============================================
-(1) vgg19 ¸ğµ¨ ¹Ì¸® ÇĞ½ÀµÈ°É ´Ù¿î¹ŞÀ½
+(1) vgg19 ëª¨ë¸ ë¯¸ë¦¬ í•™ìŠµëœê±¸ ë‹¤ìš´ë°›ìŒ
 : wget http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat -P data/
 
-(2) ÄÚµå µû¶ó¼­ csv ÆÄÀÏÀ» json ÆÄÀÏ·Î ¹Ù²Ş (csv_to_json.py) - ÆÄÀÌÂü »ç¿ë
+(2) ì½”ë“œ ë”°ë¼ì„œ csv íŒŒì¼ì„ json íŒŒì¼ë¡œ ë°”ê¿ˆ (csv_to_json.py) - íŒŒì´ì°¸ ì‚¬ìš©
 
-(3) imgPrepro.py ÀÌÁ¦ ½ÇÇàµÇµµ·Ï ¼öÁ¤ÇÒ Â÷·Ê.
--> trainÀÌ¶û valÀÌ¶û Ä¸¼Ç json ÆÄÀÏ ±¸ºĞÇØ¼­ º°µµ·Î ¸¸µé¾î¾ß ÇÔ (ÄÚµå¿¡¼­ ±×·¯°í ÀÖÀ¸¹Ç·Î)
+(3) imgPrepro.py ì´ì œ ì‹¤í–‰ë˜ë„ë¡ ìˆ˜ì •í•  ì°¨ë¡€.
+-> trainì´ë‘ valì´ë‘ ìº¡ì…˜ json íŒŒì¼ êµ¬ë¶„í•´ì„œ ë³„ë„ë¡œ ë§Œë“¤ì–´ì•¼ í•¨ (ì½”ë“œì—ì„œ ê·¸ëŸ¬ê³  ìˆìœ¼ë¯€ë¡œ)
 
 
 
 ===============================================
-(1) ÄÚµå¿¡ ¸ÂÃß±â À§ÇØ train/val µ¥ÀÌÅÍ¼Â¿¡ ¸Â°Ô Ä¸¼Çµµ º°µµÀÇ csv ÆÄÀÏ·Î ³ª´©´Â ÀÛ¾÷ - ÆÄÀÌÂü
-: 'D:/Á¹¾÷ÀÛÇ°/token_300imgs_test' & 'D:/Á¹¾÷ÀÛÇ°/token_300imgs_val'
+(1) ì½”ë“œì— ë§ì¶”ê¸° ìœ„í•´ train/val ë°ì´í„°ì…‹ì— ë§ê²Œ ìº¡ì…˜ë„ ë³„ë„ì˜ csv íŒŒì¼ë¡œ ë‚˜ëˆ„ëŠ” ì‘ì—… - íŒŒì´ì°¸
+: 'D:/ì¡¸ì—…ì‘í’ˆ/token_300imgs_test' & 'D:/ì¡¸ì—…ì‘í’ˆ/token_300imgs_val'
 
-(2) ÄÚµå¿¡ ¸ÂÃß±â À§ÇØ (1)ÀÇ csv ÆÄÀÏµéÀ» json ÆÄÀÏ·Î º¯È¯ÇÔ - ÆÄÀÌÂü
-: C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\showAttendTell Æú´õ ³»¿¡ ÀÖÀ½.
+(2) ì½”ë“œì— ë§ì¶”ê¸° ìœ„í•´ (1)ì˜ csv íŒŒì¼ë“¤ì„ json íŒŒì¼ë¡œ ë³€í™˜í•¨ - íŒŒì´ì°¸
+: C:\Users\[PCìœ ì €ëª…]\PycharmProjects\showAttendTell í´ë” ë‚´ì— ìˆìŒ.
 
-(3) prepro ¼öÁ¤ ¿Ï·áÇÔ - notepad++
-: °æ·Î ¼öÁ¤ÀÌ ´ëºÎºĞ.
+(3) prepro ìˆ˜ì • ì™„ë£Œí•¨ - notepad++
+: ê²½ë¡œ ìˆ˜ì •ì´ ëŒ€ë¶€ë¶„.
 
-(4) GCP VM¿¡ ÇÊ¿äÇÑ µğ·ºÅä¸® mkdir - GCP
-:  /home/[°èÁ¤¸í]/downloads/data/train/ & /home/[°èÁ¤¸í]/downloads/data/val/ & /home/[°èÁ¤¸í]/downloads/data/test/
+(4) GCP VMì— í•„ìš”í•œ ë””ë ‰í† ë¦¬ mkdir - GCP
+:  /home/[ê³„ì •ëª…]/downloads/data/train/ & /home/[ê³„ì •ëª…]/downloads/data/val/ & /home/[ê³„ì •ëª…]/downloads/data/test/
 
-(5) imgPrepro.py / core_utils.py / core_vggnet.py ¾÷·Îµå - Google SDK
-gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCÀ¯Àú¸í]/Desktop/git_uploaded/imgPrepro.py" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/code
-gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCÀ¯Àú¸í]/Desktop/git_uploaded/core_utils.py" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/code
-(ÀÌ¶§ SDK ¾÷µ¥ÀÌÆ® ÀÖ´Ù°í ÇØ¼­ Àá½Ã ¾÷µ¥ÀÌÆ® ÁøÇàÇÕ 212.00¹öÀüÀÎ°¡·Î)
-gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCÀ¯Àú¸í]/Desktop/git_uploaded/core_vggnet.py" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/code
+(5) imgPrepro.py / core_utils.py / core_vggnet.py ì—…ë¡œë“œ - Google SDK
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCìœ ì €ëª…]/Desktop/git_uploaded/imgPrepro.py" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/code
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCìœ ì €ëª…]/Desktop/git_uploaded/core_utils.py" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/code
+(ì´ë•Œ SDK ì—…ë°ì´íŠ¸ ìˆë‹¤ê³  í•´ì„œ ì ì‹œ ì—…ë°ì´íŠ¸ ì§„í–‰í•© 212.00ë²„ì „ì¸ê°€ë¡œ)
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCìœ ì €ëª…]/Desktop/git_uploaded/core_vggnet.py" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/code
 
-(6) json ÆÄÀÏµé ¾÷·ÎµåÇÏ±â -Google SDK
-gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\showAttendTell\token_3000imgs_train.json" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/data
-gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\showAttendTell\token_3000imgs_val.json" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/data
+(6) json íŒŒì¼ë“¤ ì—…ë¡œë“œí•˜ê¸° -Google SDK
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCìœ ì €ëª…]\PycharmProjects\showAttendTell\token_3000imgs_train.json" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCìœ ì €ëª…]\PycharmProjects\showAttendTell\token_3000imgs_val.json" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/data
 
-(7) imgPrepro ½ÇÇà½ÃÄÑº¸±â - GCP VM
+(7) imgPrepro ì‹¤í–‰ì‹œì¼œë³´ê¸° - GCP VM
 python ~/downloads/code/imgPrepro.py
 pip install pandas
 python ~/downloads/code/imgPrepro.py
 
-(8) imgPrepro ¿À·ù ÇØ°áÇÏ±â
-(¿À·ù³»¿ë)
+(8) imgPrepro ì˜¤ë¥˜ í•´ê²°í•˜ê¸°
+(ì˜¤ë¥˜ë‚´ìš©)
 Traceback (most recent call last):
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 223, in <module>
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 223, in <module>
     main()
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 146, in main
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 146, in main
     max_length=max_length)
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
     id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
 TypeError: list indices must be integers, not str
-(¿À·ù³»¿ë ³¡)
+(ì˜¤ë¥˜ë‚´ìš© ë)
 
--> ÆÄÀÌÂüÀ¸·Î Á÷Á¢ Âï¾îº¸¸é¼­ ÇØ°áÇÏ±â À§ÇØ papago_trans ÇÃÁ§Æú´õ ³»ÀÇ preproTest.py ÆÄÀÏ·Î ½ÇÇè ½ÃÀÛ
--> ³»°¡ ¸¸µç csv Ä¸¼Ç ÆÄÀÏÀ» jsonÀ¸·Î º¯È¯ÇßÀ» ¶§ÀÇ ÇüÅÂ¿Í ÄÚµå¿¡¼­ »ç¿ëÇÏ´Â jsonÀÇ ÇüÅÂ°¡ ´Ù¸£´Ù´Â °ÍÀ» ±ú´ŞÀ½
--> ÄÚµå ¼öÁ¤ÀÌ ÇÊ¿ä
-->https://github.com/tylin/coco-caption ¿¡¼­ Á÷Á¢ coco-captionÀÌ ¾î¶² ÇüÅÂÀÎÁö ÆÄ¾ÇÇÏ±â À§ÇØ Á¢±Ù
-->http://cocodataset.org/#download ·Î µé¾î°¡¼­ ¿ë·®ÀÌ °¡Àå ÀÛÀº(1GBÂ¥¸®) µ¥ÀÌÅÍ¼ÂÀ» ¹Ş¾Æº½
--> ÀÌ°Ç ±×³É ÀÌ¹ÌÁö¼ÂÀÌ±æ·¡ ¿ÖÀÎÁö Â¦±Ã°°Àº 241MBÂ¥¸® annotations ÆÄÀÏÀ» ¹Ş¾Æº½
--> ±×³É ¿¢¼¿·Î ¿­¾ú´õ´Ï ÇüÅÂ ÆÄ¾ÇÀÌ Àß ¾ÈµÇ±æ·¡ preproTest.py¸¦ ÅëÇØ ¿­¾îº½
--> {'image_id': 570169, 'id': 691760, 'caption': 'a brown teddy bear and some wooden block toys'} ÇüÅÂ°¡ ¹İº¹
-*Âü°í·Î image_id°¡ ÆÄÀÏ¸í, id´Â ¹ºÁö ¸ğ¸£°Ú°í captionÀÌ ÇĞ½À½ÃÅ³ ¾Ö
--> ¹İ¸é ³» jsonÀº {'eng':'¿µ¹®Ä¸¼Ç', 'id':'1234567', 'kor':'ÇÑ±ÛÄ¸¼Ç'} ÇüÅÂ°¡ ¹İº¹...
--> ¿À·ù ÇØ°á À§ÇØ _process_caption_data ÇÔ¼ö¸¸ °¡Á®¿È
-(¿À·ù)
-"C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\papago_trans\venv\Scripts\python.exe" "C:/Users/[PCÀ¯Àú¸í]/PycharmProjects/papago_trans/preproTest.py"
-C:/Users/[PCÀ¯Àú¸í]/PycharmProjects/papago_trans/preproTest.py:53: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+-> íŒŒì´ì°¸ìœ¼ë¡œ ì§ì ‘ ì°ì–´ë³´ë©´ì„œ í•´ê²°í•˜ê¸° ìœ„í•´ papago_trans í”Œì í´ë” ë‚´ì˜ preproTest.py íŒŒì¼ë¡œ ì‹¤í—˜ ì‹œì‘
+-> ë‚´ê°€ ë§Œë“  csv ìº¡ì…˜ íŒŒì¼ì„ jsonìœ¼ë¡œ ë³€í™˜í–ˆì„ ë•Œì˜ í˜•íƒœì™€ ì½”ë“œì—ì„œ ì‚¬ìš©í•˜ëŠ” jsonì˜ í˜•íƒœê°€ ë‹¤ë¥´ë‹¤ëŠ” ê²ƒì„ ê¹¨ë‹¬ìŒ
+-> ì½”ë“œ ìˆ˜ì •ì´ í•„ìš”
+->https://github.com/tylin/coco-caption ì—ì„œ ì§ì ‘ coco-captionì´ ì–´ë–¤ í˜•íƒœì¸ì§€ íŒŒì•…í•˜ê¸° ìœ„í•´ ì ‘ê·¼
+->http://cocodataset.org/#download ë¡œ ë“¤ì–´ê°€ì„œ ìš©ëŸ‰ì´ ê°€ì¥ ì‘ì€(1GBì§œë¦¬) ë°ì´í„°ì…‹ì„ ë°›ì•„ë´„
+-> ì´ê±´ ê·¸ëƒ¥ ì´ë¯¸ì§€ì…‹ì´ê¸¸ë˜ ì™œì¸ì§€ ì§ê¶ê°™ì€ 241MBì§œë¦¬ annotations íŒŒì¼ì„ ë°›ì•„ë´„
+-> ê·¸ëƒ¥ ì—‘ì…€ë¡œ ì—´ì—ˆë”ë‹ˆ í˜•íƒœ íŒŒì•…ì´ ì˜ ì•ˆë˜ê¸¸ë˜ preproTest.pyë¥¼ í†µí•´ ì—´ì–´ë´„
+-> {'image_id': 570169, 'id': 691760, 'caption': 'a brown teddy bear and some wooden block toys'} í˜•íƒœê°€ ë°˜ë³µ
+*ì°¸ê³ ë¡œ image_idê°€ íŒŒì¼ëª…, idëŠ” ë­”ì§€ ëª¨ë¥´ê² ê³  captionì´ í•™ìŠµì‹œí‚¬ ì• 
+-> ë°˜ë©´ ë‚´ jsonì€ {'eng':'ì˜ë¬¸ìº¡ì…˜', 'id':'1234567', 'kor':'í•œê¸€ìº¡ì…˜'} í˜•íƒœê°€ ë°˜ë³µ...
+-> ì˜¤ë¥˜ í•´ê²° ìœ„í•´ _process_caption_data í•¨ìˆ˜ë§Œ ê°€ì ¸ì˜´
+(ì˜¤ë¥˜)
+"C:\Users\[PCìœ ì €ëª…]\PycharmProjects\papago_trans\venv\Scripts\python.exe" "C:/Users/[PCìœ ì €ëª…]/PycharmProjects/papago_trans/preproTest.py"
+C:/Users/[PCìœ ì €ëª…]/PycharmProjects/papago_trans/preproTest.py:53: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
   caption_data.set_value(i, 'caption', caption.lower())
 Traceback (most recent call last):
-  File "C:/Users/[PCÀ¯Àú¸í]/PycharmProjects/papago_trans/preproTest.py", line 60, in <module>
+  File "C:/Users/[PCìœ ì €ëª…]/PycharmProjects/papago_trans/preproTest.py", line 60, in <module>
     caption_data = caption_data.drop(caption_data.index[del_idx])
-  File "C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\papago_trans\venv\lib\site-packages\pandas\core\indexes\base.py", line 2095, in __getitem__
+  File "C:\Users\[PCìœ ì €ëª…]\PycharmProjects\papago_trans\venv\lib\site-packages\pandas\core\indexes\base.py", line 2095, in __getitem__
     result = getitem(key)
 IndexError: index 1087 is out of bounds for axis 0 with size 1084
 
 Process finished with exit code 1
-(¿À·ù³»¿ë ³¡)
--> index 1087Àº ´ÙÀ½°ú °°´Ù
+(ì˜¤ë¥˜ë‚´ìš© ë)
+-> index 1087ì€ ë‹¤ìŒê³¼ ê°™ë‹¤
 1087
 A woman in a short black dress is holding a champagne flute and standing in front of a refrigerator
-???¹¹°¡ ¹®Á¦ÀÏ±î...
--> ´Ü¼ø µé¿©¾²±â ¿À·ù¿´´ø°É·Î.. indent °íÄ¡´Ï±î Àß µ¹¾Æ°£´Ù
+???ë­ê°€ ë¬¸ì œì¼ê¹Œ...
+-> ë‹¨ìˆœ ë“¤ì—¬ì“°ê¸° ì˜¤ë¥˜ì˜€ë˜ê±¸ë¡œ.. indent ê³ ì¹˜ë‹ˆê¹Œ ì˜ ëŒì•„ê°„ë‹¤
 
 
 ============================================================================
-(1)ÀÏ´Ü ÀÓ½Ã·Î ¼öÁ¤ÇÑ caption ÆÄÀÏµé(.csv)À» json Çü½ÄÀ¸·Î ¹Ù²Û´Ù.
-C:/Users/[PCÀ¯Àú¸í]/PycharmPRojects/papago_trans/csv_to_json.py ¸¦ ÀÌ¿ë
+(1)ì¼ë‹¨ ì„ì‹œë¡œ ìˆ˜ì •í•œ caption íŒŒì¼ë“¤(.csv)ì„ json í˜•ì‹ìœ¼ë¡œ ë°”ê¾¼ë‹¤.
+C:/Users/[PCìœ ì €ëª…]/PycharmPRojects/papago_trans/csv_to_json.py ë¥¼ ì´ìš©
  
-(2)±×¸®°í ±× json ÆÄÀÏµéÀ» ´Ù½Ã ¼­¹ö·Î ¾÷·Îµå
-gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\showAttendTell\token_3000imgs_val_revised.json" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/data
+(2)ê·¸ë¦¬ê³  ê·¸ json íŒŒì¼ë“¤ì„ ë‹¤ì‹œ ì„œë²„ë¡œ ì—…ë¡œë“œ
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCìœ ì €ëª…]\PycharmProjects\showAttendTell\token_3000imgs_val_revised.json" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/data
 
-(Àá½Ã gcloud components update ½ÇÇàÇÔ)
+(ì ì‹œ gcloud components update ì‹¤í–‰í•¨)
 
-gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\showAttendTell\token_3000imgs_train_revised.json" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCìœ ì €ëª…]\PycharmProjects\showAttendTell\token_3000imgs_train_revised.json" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/data
 
-(3) imgPrepro.py¿¡¼­ .json ÆÄÀÏµéÀÇ ÆÄÀÏ¸íÀ» _revised.json À¸·Î ¹Ù²Ù°í ¼­¹ö¿¡ ´Ù½Ã imgPrepro.py¸¦ ¾÷·ÎµåÇÑ´Ù
-gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCÀ¯Àú¸í]/Desktop/git_uploaded/imgPrepro.py" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/code
+(3) imgPrepro.pyì—ì„œ .json íŒŒì¼ë“¤ì˜ íŒŒì¼ëª…ì„ _revised.json ìœ¼ë¡œ ë°”ê¾¸ê³  ì„œë²„ì— ë‹¤ì‹œ imgPrepro.pyë¥¼ ì—…ë¡œë“œí•œë‹¤
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCìœ ì €ëª…]/Desktop/git_uploaded/imgPrepro.py" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/code
 
-(4) ´Ù½Ã python ~/downloads/code/imgPrepro.py
+(4) ë‹¤ì‹œ python ~/downloads/code/imgPrepro.py
 
-(5) ¾ÆÀÌ°í source ~/tensorflow/bin/activate ±î¸Ô¾ú´Ù
+(5) ì•„ì´ê³  source ~/tensorflow/bin/activate ê¹Œë¨¹ì—ˆë‹¤
 
-(6) ½ÇÇà ½ÃÀÛÇß´õ´Ï ÂïÈù °Í
-(½ÃÀÛ)
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/linalg/basic.py:17: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+(6) ì‹¤í–‰ ì‹œì‘í–ˆë”ë‹ˆ ì°íŒ ê²ƒ
+(ì‹œì‘)
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/linalg/basic.py:17: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._solve_toeplitz import levinson
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/linalg/__init__.py:207: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/linalg/__init__.py:207: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._decomp_update import *
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/special/__init__.py:640: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/special/__init__.py:640: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._ufuncs import *
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/special/_ellip_harm.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/special/_ellip_harm.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._ellip_harm_2 import _ellipsoid, _ellipsoid_norm
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/interpolate/_bsplines.py:10: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/interpolate/_bsplines.py:10: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from . import _bspl
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/lil.py:19: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/lil.py:19: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from . import _csparsetools
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:165: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:165: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._shortest_path import shortest_path, floyd_warshall, dijkstra,\
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/_validation.py:5: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/_validation.py:5: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._tools import csgraph_to_dense, csgraph_from_dense,\
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:167: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:167: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._traversal import breadth_first_order, depth_first_order, \
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:169: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:169: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._min_spanning_tree import minimum_spanning_tree
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:170: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/sparse/csgraph/__init__.py:170: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._reordering import reverse_cuthill_mckee, maximum_bipartite_matching, \
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/__init__.py:95: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/__init__.py:95: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from .ckdtree import *
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/__init__.py:96: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/__init__.py:96: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from .qhull import *
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/_spherical_voronoi.py:18: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/_spherical_voronoi.py:18: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from . import _voronoi
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/distance.py:122: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/spatial/distance.py:122: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from . import _hausdorff
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/ndimage/measurements.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/ndimage/measurements.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from . import _ni_label
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/h5py/__init__.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/h5py/__init__.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from ._conv import register_converters as _register_converters
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/h5py/__init__.py:45: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/h5py/__init__.py:45: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from . import h5a, h5d, h5ds, h5f, h5fd, h5g, h5r, h5s, h5t, h5p, h5z
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/h5py/_hl/group.py:22: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/h5py/_hl/group.py:22: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from .. import h5g, h5i, h5o, h5r, h5t, h5l, h5p
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/_libs/__init__.py:4: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/_libs/__init__.py:4: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from .tslib import iNaT, NaT, Timestamp, Timedelta, OutOfBoundsDatetime
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/__init__.py:26: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/__init__.py:26: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import (hashtable as _hashtable,
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/dtypes/common.py:6: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/dtypes/common.py:6: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import algos, lib
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/util/hashing.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/util/hashing.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import hashing, tslib
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/indexes/base.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/indexes/base.py:7: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import (lib, index as libindex, tslib as libts,
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/tseries/offsets.py:21: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/tseries/offsets.py:21: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   import pandas._libs.tslibs.offsets as liboffsets
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/ops.py:16: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/ops.py:16: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import algos as libalgos, ops as libops
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/indexes/interval.py:32: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/indexes/interval.py:32: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs.interval import (
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/internals.py:14: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/internals.py:14: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import internals as libinternals
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/sparse/array.py:33: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/sparse/array.py:33: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   import pandas._libs.sparse as splib
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/window.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/window.py:36: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   import pandas._libs.window as _window
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/groupby/groupby.py:68: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/groupby/groupby.py:68: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import (lib, reduction,
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/core/reshape/reshape.py:30: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/core/reshape/reshape.py:30: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import algos as _algos, reshape as _reshape
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/io/parsers.py:45: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/io/parsers.py:45: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   import pandas._libs.parsers as parsers
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/pandas/io/pytables.py:50: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/pandas/io/pytables.py:50: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from pandas._libs import algos, lib, writers as libwriters
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio4.py:18: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio4.py:18: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from .mio_utils import squeeze_element, chars_to_strings
-/home/[°èÁ¤¸í]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio5.py:98: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio5.py:98: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
   from .mio5_utils import VarReader5
 Traceback (most recent call last):
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 223, in <module>
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 223, in <module>
     main()
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 146, in main
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 146, in main
     max_length=max_length)
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
     id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
 TypeError: list indices must be integers, not str
-(³¡) -> ¾î¶»°Ô ÇØ°áÇÒ °ÍÀÎÁö
--> Ã£¾Æº¸´Ï scipy ¶óÀÌºê·¯¸®¿¡¼­ ³ªÅ¸³ª´Â ½ÇÇà °æ°í¶ó´Âµ¥(https://hiseon.me/2018/03/05/tensorflow-errors/)
+(ë) -> ì–´ë–»ê²Œ í•´ê²°í•  ê²ƒì¸ì§€
+-> ì°¾ì•„ë³´ë‹ˆ scipy ë¼ì´ë¸ŒëŸ¬ë¦¬ì—ì„œ ë‚˜íƒ€ë‚˜ëŠ” ì‹¤í–‰ ê²½ê³ ë¼ëŠ”ë°(https://hiseon.me/2018/03/05/tensorflow-errors/)
 $ pip install numpy==1.14.5 --upgrade
 $ pip install setuptools==39.1.0 --upgrade
-µîÀÇ  ¸í·ÉÀ» ÅëÇØ Æ¯Á¤ ¹öÀüÀ¸·Î Ä¿½ºÅÍ¸¶ÀÌÂ¡À» ÇØ¾ß Á¦´ë·Î ÀÛµ¿ÇÒ °Å¶ó°í µéÀ½
-->pip freeze ¸¦ ÅëÇØ ¸ğµç ¸ğµâÀÇ ¹öÀüÀ» È®ÀÎÇÑ °á°ú
+ë“±ì˜  ëª…ë ¹ì„ í†µí•´ íŠ¹ì • ë²„ì „ìœ¼ë¡œ ì»¤ìŠ¤í„°ë§ˆì´ì§•ì„ í•´ì•¼ ì œëŒ€ë¡œ ì‘ë™í•  ê±°ë¼ê³  ë“¤ìŒ
+->pip freeze ë¥¼ í†µí•´ ëª¨ë“  ëª¨ë“ˆì˜ ë²„ì „ì„ í™•ì¸í•œ ê²°ê³¼
 absl-py==0.3.0
 apt-xapian-index==0.45
 astor==0.7.1
@@ -358,83 +358,286 @@ tensorboard==1.9.0
 tensorflow==1.9.0
 numpy==1.15.0
 
-½ÃµµÇØº¸±â ½ÃÀÛÇÔ
+ì‹œë„í•´ë³´ê¸° ì‹œì‘í•¨
 pip install scipy==1.0.1 --upgrade
 python ~/downloads/code/imgPrepro.py
 pip install numpy==1.14.5 --upgrade
 
-***numpy ¹öÀüÀ» 1.14.5·Î ¹Ù²å´õ´Ï Àú À§¿¡ ±æ°Ô Ãâ·ÂµÆ´ø ¿À·ù ¶óÀÎÀÌ ´õ ÀÌ»ó Ãâ·ÂµÇÁö ¾Ê´Â °ÍÀ» È®ÀÎ.
-È®½ÇÈ÷ ÇÏ±â À§ÇØ scipy ¹öÀüÀ» ´Ù½Ã ¿ø·¡´ë·Î µ¹¸°´Ù. (1.1.0À¸·Î)
+***numpy ë²„ì „ì„ 1.14.5ë¡œ ë°”ê¿¨ë”ë‹ˆ ì € ìœ„ì— ê¸¸ê²Œ ì¶œë ¥ëë˜ ì˜¤ë¥˜ ë¼ì¸ì´ ë” ì´ìƒ ì¶œë ¥ë˜ì§€ ì•ŠëŠ” ê²ƒì„ í™•ì¸.
+í™•ì‹¤íˆ í•˜ê¸° ìœ„í•´ scipy ë²„ì „ì„ ë‹¤ì‹œ ì›ë˜ëŒ€ë¡œ ëŒë¦°ë‹¤. (1.1.0ìœ¼ë¡œ)
 pip install scipy --upgrade
-±×·¨´õ´Ï ´Ù½Ã Á¦´ë·Î µ¹¾Æ°¨ -> Áï ¹®Á¦´Â numpy ¹öÀüÀÌ¾ú´ø °ÍÀ¸·Î ÆÇ¸í!
-±×·¯³ª ¿©ÀüÈ÷ ³²¾Æ ÀÖ´Â ¿À·ù
-(¿À·ù ½ÃÀÛ)
+ê·¸ë¬ë”ë‹ˆ ë‹¤ì‹œ ì œëŒ€ë¡œ ëŒì•„ê° -> ì¦‰ ë¬¸ì œëŠ” numpy ë²„ì „ì´ì—ˆë˜ ê²ƒìœ¼ë¡œ íŒëª…!
+ê·¸ëŸ¬ë‚˜ ì—¬ì „íˆ ë‚¨ì•„ ìˆëŠ” ì˜¤ë¥˜
+(ì˜¤ë¥˜ ì‹œì‘)
 Traceback (most recent call last):
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 223, in <module>
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 223, in <module>
     main()
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 146, in main
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 146, in main
     max_length=max_length)
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro.py", line 23, in _process_caption_data
     id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
 TypeError: list indices must be integers, not str
-(¿À·ù ³¡)
--> ÀĞ¾îº¼¸¸:https://blog.naver.com/chumy/220542543520
+(ì˜¤ë¥˜ ë)
+-> ì½ì–´ë³¼ë§Œ:https://blog.naver.com/chumy/220542543520
 
-±×·±µ¥ ÀÌ°Å ÇØ°áÇÏ±â Àü¿¡ ´Ù¸¥ ¿À·ù°¡ »ı±è csv to json ÇÏ´Âµ¥ ¾Ë°íº¸´Ï ¾î´À ½ÃÁ¡ºÎÅÍ ÇÑ±ÛÀÌ ´Ù ±úÁö°í ÀÖ¾ú´Ù Çæ...
-ÇÑ±Û ±úÁü ¿À·ùºÎÅÍ ÇØ°á ½ÃÀÛ
--> sys.setdefaultencoding('utf-8')Àº python3.xx ºÎÅÍ´Â ¾Æ¹« ¼Ò¿ëÀÌ ¾ø´Ù°í ÇÔ
--> #-*- coding: utf-8 -*- µµ ¾Æ¹« ¼Ò¿ëÀÌ ¾øÀ½
--> encoding='utf-8' Çß´Âµ¥µµ ¹«¼Ò¿ë
--> json.dumps()¿¡¼­ ensure_ascii=False Çß´Âµ¥µµ ¹«¼Ò¿ë
+ê·¸ëŸ°ë° ì´ê±° í•´ê²°í•˜ê¸° ì „ì— ë‹¤ë¥¸ ì˜¤ë¥˜ê°€ ìƒê¹€ csv to json í•˜ëŠ”ë° ì•Œê³ ë³´ë‹ˆ ì–´ëŠ ì‹œì ë¶€í„° í•œê¸€ì´ ë‹¤ ê¹¨ì§€ê³  ìˆì—ˆë‹¤ í—...
+í•œê¸€ ê¹¨ì§ ì˜¤ë¥˜ë¶€í„° í•´ê²° ì‹œì‘
+-> sys.setdefaultencoding('utf-8')ì€ python3.xx ë¶€í„°ëŠ” ì•„ë¬´ ì†Œìš©ì´ ì—†ë‹¤ê³  í•¨
+-> #-*- coding: utf-8 -*- ë„ ì•„ë¬´ ì†Œìš©ì´ ì—†ìŒ
+-> encoding='utf-8' í–ˆëŠ”ë°ë„ ë¬´ì†Œìš©
+-> json.dumps()ì—ì„œ ensure_ascii=False í–ˆëŠ”ë°ë„ ë¬´ì†Œìš©
 
-°á±¹ ±×³É csv¸¦ jsonÀ¸·Î º¯È¯ÇØÁÖ´Â »çÀÌÆ®¸¦ Ã£¾Æ¼­ °Å±æ »ç¿ëÇÔ
+ê²°êµ­ ê·¸ëƒ¥ csvë¥¼ jsonìœ¼ë¡œ ë³€í™˜í•´ì£¼ëŠ” ì‚¬ì´íŠ¸ë¥¼ ì°¾ì•„ì„œ ê±°ê¸¸ ì‚¬ìš©í•¨
 ->http://www.convertcsv.com/csv-to-json.htm
--> notepad++·Î ¿­¸é ÇÑ±Û ±×´ë·Î Àß ³ª¿À´Âµ¥ ¿¢¼¿·Î ¿­¸é ÇÑ±ÛÀÌ ´Ù ±úÁ® º¸ÀÎ´Ù.. ÀÏ´Ü ÀÌ´ë·Î ³Ñ¾î°¡´Â°É·Î ´Ù¸¥°Ô ´õ ±ŞÇÏ´Ï±î
+-> notepad++ë¡œ ì—´ë©´ í•œê¸€ ê·¸ëŒ€ë¡œ ì˜ ë‚˜ì˜¤ëŠ”ë° ì—‘ì…€ë¡œ ì—´ë©´ í•œê¸€ì´ ë‹¤ ê¹¨ì ¸ ë³´ì¸ë‹¤.. ì¼ë‹¨ ì´ëŒ€ë¡œ ë„˜ì–´ê°€ëŠ”ê±¸ë¡œ ë‹¤ë¥¸ê²Œ ë” ê¸‰í•˜ë‹ˆê¹Œ
 
-´Ù½Ã imgPrepro·Î µ¹¾Æ°¡ºÃÁö¸¸ ¿©ÀüÈ÷ µ¿ÀÏÇÑ ¿À·ù ¹ß»ı
-±×·¡¼­ PyCharm¿¡ vmTest ÇÃÁ§ python 2.7 È¯°æÀ¸·Î »õ·Î ¸¸µé°í ¿©±â¼­ °è¼Ó Å×½ºÆ® ÇÒ ¿¹Á¤
+ë‹¤ì‹œ imgPreproë¡œ ëŒì•„ê°€ë´¤ì§€ë§Œ ì—¬ì „íˆ ë™ì¼í•œ ì˜¤ë¥˜ ë°œìƒ
+ê·¸ë˜ì„œ PyCharmì— vmTest í”Œì  python 2.7 í™˜ê²½ìœ¼ë¡œ ìƒˆë¡œ ë§Œë“¤ê³  ì—¬ê¸°ì„œ ê³„ì† í…ŒìŠ¤íŠ¸ í•  ì˜ˆì •
 
-C:/Users/[PCÀ¯Àú¸í]/PycharmProjects/showAttendTell/
+C:/Users/[PCìœ ì €ëª…]/PycharmProjects/showAttendTell/
 
-C:/Users/[PCÀ¯Àú¸í]/Downloads/sample_flickr30k/
+C:/Users/[PCìœ ì €ëª…]/Downloads/sample_flickr30k/
 
-gcloud compute scp --zone asia-northeast1-b [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/data/imagenet-vgg-verydeep-19.mat "C:/Users/[PCÀ¯Àú¸í]/PycharmProjects/showAttendTell/"
-¾Æ À©µµ¿ì¿¡¼± python 3.xxºÎÅÍ¸¸ tensorflow Áö¿øÇØÁØ´Ù´Â°É ÀÚ²Ù ÀØ´Â´Ù
-±×³É ´Ù½Ã ¿ø·¡ ÇÏ´ø´ë·Î VM¿¡¼­ °è¼Ó ÀÛ¾÷ÇØ¾ß°Ú´Ù
+gcloud compute scp --zone asia-northeast1-b [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/data/imagenet-vgg-verydeep-19.mat "C:/Users/[PCìœ ì €ëª…]/PycharmProjects/showAttendTell/"
+ì•„ ìœˆë„ìš°ì—ì„  python 3.xxë¶€í„°ë§Œ tensorflow ì§€ì›í•´ì¤€ë‹¤ëŠ”ê±¸ ìê¾¸ ìŠëŠ”ë‹¤
+ê·¸ëƒ¥ ë‹¤ì‹œ ì›ë˜ í•˜ë˜ëŒ€ë¡œ VMì—ì„œ ê³„ì† ì‘ì—…í•´ì•¼ê² ë‹¤
 
 ===========================================================================================
 id_to_filename = {image['id']: image['file_name'] for image in caption_data['images']}
--> ÀÌ ¶óÀÎ¿¡¼­ ÀÚ²Ù ¿À·ù ³ª´ø°É ¾î´À Á¤µµ ÇØ°áÇÔ
--> id_to_filename = {image['id']: image['file_name'] for image in caption_data} ·Î ¹Ù²Ù´Ï ÇØ°á
-(print(caption_data[1]) ÇØºÃ´õ´Ï {'image_id': 1000092795, 'id': 1, 'kor': '¸Ó¸® ½¢ÀÌ ¸¹Àº µÎ Ã»³âÀÌ ¸¶´ç¿¡ °É¾î ´Ù´Ï¸é¼­ ¼ÕÀ» »¸´Â´Ù.'}°¡ Ãâ·Â
--> ¾Ë°íº¸´Ï caption_data´Â list¶ó dictionaryÃ³·³ key°ªÀ¸·Î ¿ø¼Ò¿¡ Á¢±ÙÇÒ ¼ö ÀÖ´Â°Ô ¾Æ´Ñµ¥ ÀÚ²Ù []·Î Å°°ªÀ¸·Î Á¢±ÙÇÏ·Á°í ÇØ¼­ ¿À·ù°¡ ³µ´ø°Í.
+-> ì´ ë¼ì¸ì—ì„œ ìê¾¸ ì˜¤ë¥˜ ë‚˜ë˜ê±¸ ì–´ëŠ ì •ë„ í•´ê²°í•¨
+-> id_to_filename = {image['id']: image['file_name'] for image in caption_data} ë¡œ ë°”ê¾¸ë‹ˆ í•´ê²°
+(print(caption_data[1]) í•´ë´¤ë”ë‹ˆ {'image_id': 1000092795, 'id': 1, 'kor': 'ë¨¸ë¦¬ ìˆ±ì´ ë§ì€ ë‘ ì²­ë…„ì´ ë§ˆë‹¹ì— ê±¸ì–´ ë‹¤ë‹ˆë©´ì„œ ì†ì„ ë»—ëŠ”ë‹¤.'}ê°€ ì¶œë ¥
+-> ì•Œê³ ë³´ë‹ˆ caption_dataëŠ” listë¼ dictionaryì²˜ëŸ¼ keyê°’ìœ¼ë¡œ ì›ì†Œì— ì ‘ê·¼í•  ìˆ˜ ìˆëŠ”ê²Œ ì•„ë‹Œë° ìê¾¸ []ë¡œ í‚¤ê°’ìœ¼ë¡œ ì ‘ê·¼í•˜ë ¤ê³  í•´ì„œ ì˜¤ë¥˜ê°€ ë‚¬ë˜ê²ƒ.
 
-¾Æ.. ±×·±µ¥ ³ª´Â image_id¸¦ ÆÄÀÏ ¸íÀ» ÁöÄªÇÏ´Â colÀÇ ÀÌ¸§À¸·Î ½è´Âµ¥ imgPrepro.py ÆÄÀÏ¿¡¼­´Â ´Ù¸¥ ¿ëµµ·Î ÁöÁ¤ÇÑ º¯¼ö¶ó¼­
-Ä¸¼Ç ÀúÀåÇØµĞ ÆÄÀÏÀÎ .csv ÆÄÀÏ¿¡ col¸í ¹Ù²Ù°í ´Ù ´Ù½Ã .json À¸·Î º¯È¯ÇØ¾ß ÇÒµí¤Ğ¤Ğ¤Ğ¤Ğ¤Ğ
-
-=====================================================================================
-
-jsonÀ¸·Î º¯È¯ ¿Ï·á
-line 40 ¿À·ù (¶Ç ¸®½ºÆ®ÀÎµ¥ µñ¼Å³Ê¸®Ã³·³ Å°°ªÀ¸·Î Ã£°Ô ÇØµÖ¼­ ±×·±µí)
-imgPrepro.py line 40(Àº ¹Ù·Î for annotation in caption_data['annotations']: )ºÎÅÍ °íÄ¡´Â°É imgPrepro2.py·Î ÆÄ»ı ÆÄÀÏÀ» ¸¸µç´Ù.
+ì•„.. ê·¸ëŸ°ë° ë‚˜ëŠ” image_idë¥¼ íŒŒì¼ ëª…ì„ ì§€ì¹­í•˜ëŠ” colì˜ ì´ë¦„ìœ¼ë¡œ ì¼ëŠ”ë° imgPrepro.py íŒŒì¼ì—ì„œëŠ” ë‹¤ë¥¸ ìš©ë„ë¡œ ì§€ì •í•œ ë³€ìˆ˜ë¼ì„œ
+ìº¡ì…˜ ì €ì¥í•´ë‘” íŒŒì¼ì¸ .csv íŒŒì¼ì— colëª… ë°”ê¾¸ê³  ë‹¤ ë‹¤ì‹œ .json ìœ¼ë¡œ ë³€í™˜í•´ì•¼ í• ë“¯ã… ã… ã… ã… ã… 
 
 =====================================================================================
-½Ãµµ 1. file_nameÀ» image_id·Î ¹Ù²Ù¸é?
--¹Ù²Û ÆÄÀÏ token_3000imgs_val_revised_f2.json °ú token_3000imgs_train_revised_f2.jsonÀ» ÁØºñ
--ÀÌ¸¦ VM¿¡ ´Ù½Ã ¾÷·Îµå
-gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCÀ¯Àú¸í]/PycharmProjects/showAttendTell/token_3000imgs_val_revised_f2.json" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/data
-gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\showAttendTell\token_3000imgs_train_revised_f2.json" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/data
-gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCÀ¯Àú¸í]\PycharmProjects\showAttendTell\token_3000imgs_train_revised_f2.json" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/data
-gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCÀ¯Àú¸í]\Desktop\git_uploaded\imgPrepro2.py" [°èÁ¤¸í]@vm:/home/[°èÁ¤¸í]/downloads/code
--½ÇÇà½ÃÄÑº¸´Ï ´ÙÀ½°ú °°Àº ¿À·ù ¹ß»ı
-(¿À·ù³»¿ë)
+
+jsonìœ¼ë¡œ ë³€í™˜ ì™„ë£Œ
+line 40 ì˜¤ë¥˜ (ë˜ ë¦¬ìŠ¤íŠ¸ì¸ë° ë”•ì…”ë„ˆë¦¬ì²˜ëŸ¼ í‚¤ê°’ìœ¼ë¡œ ì°¾ê²Œ í•´ë‘¬ì„œ ê·¸ëŸ°ë“¯)
+imgPrepro.py line 40(ì€ ë°”ë¡œ for annotation in caption_data['annotations']: )ë¶€í„° ê³ ì¹˜ëŠ”ê±¸ imgPrepro2.pyë¡œ íŒŒìƒ íŒŒì¼ì„ ë§Œë“ ë‹¤.
+
+=====================================================================================
+ì‹œë„ 1. file_nameì„ image_idë¡œ ë°”ê¾¸ë©´?
+-ë°”ê¾¼ íŒŒì¼ token_3000imgs_val_revised_f2.json ê³¼ token_3000imgs_train_revised_f2.jsonì„ ì¤€ë¹„
+-ì´ë¥¼ VMì— ë‹¤ì‹œ ì—…ë¡œë“œ
+gcloud compute scp --zone asia-northeast1-b "C:/Users/[PCìœ ì €ëª…]/PycharmProjects/showAttendTell/token_3000imgs_val_revised_f2.json" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCìœ ì €ëª…]\PycharmProjects\showAttendTell\token_3000imgs_train_revised_f2.json" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCìœ ì €ëª…]\PycharmProjects\showAttendTell\token_3000imgs_train_revised_f2.json" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/data
+gcloud compute scp --zone asia-northeast1-b "C:\Users\[PCìœ ì €ëª…]\Desktop\git_uploaded\imgPrepro2.py" [ê³„ì •ëª…]@vm:/home/[ê³„ì •ëª…]/downloads/code
+-ì‹¤í–‰ì‹œì¼œë³´ë‹ˆ ë‹¤ìŒê³¼ ê°™ì€ ì˜¤ë¥˜ ë°œìƒ
+(ì˜¤ë¥˜ë‚´ìš©)
 Traceback (most recent call last):
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro2.py", line 224, in <module>
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py", line 224, in <module>
     main()
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro2.py", line 147, in main
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py", line 147, in main
     max_length=max_length)
-  File "/home/[°èÁ¤¸í]/downloads/code/imgPrepro2.py", line 31, in _process_caption_data
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py", line 31, in _process_caption_data
     annotation['file_name'] = os.path.join(image_dir, id_to_filename[image_id])
 KeyError: 1000092795
-(¿À·ù³»¿ë ³¡)
+(ì˜¤ë¥˜ë‚´ìš© ë)
+-> "Python raises a KeyError whenever a dict() object is requested (using the format a = adict[key]) and the key is not in the dictionary."
+-> image_idê°€ ì•„ë‹ˆë¼ 'image_id' ì•„ë‹˜?
+-> ì•„ë‹ˆë‹¤. imgPrepro2.pyë¥¼ ìˆ˜ì •í•¨
+(ìˆ˜ì •í•œ ë‚´ìš©)
+data = []
+    for annotation in caption_data:
+        image_id = annotation['image_id']
+        annotation['file_name'] = os.path.join(image_dir, str(image_id))
+        data += [annotation]
+ê·¸ë¦¬ê³ 
+'caption'ì„ ë‚´ íŒŒì¼ì— ì•Œë§ê²Œ 'kor'ë¡œ
+(ìˆ˜ì •í•œ ë‚´ìš© ë)
 
+-ìˆ˜ì • í›„ ìƒˆë¡œ ë°œìƒí•œ ì˜¤ë¥˜
+(ì˜¤ë¥˜ ë‚´ìš© ì‹œì‘)
+/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py:47: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+  caption_data.set_value(i, 'caption', caption.lower())
+The number of captions before deletion: 10500
+The number of captions after deletion: 9668
+The number of captions before deletion: 4500
+The number of captions after deletion: 4214
+Finished processing caption data
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.annotations.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.annotations.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.annotations.pkl..
+Loaded /home/[ê³„ì •ëª…]/downloads/data/train/train.annotations.pkl..
+Filtered 10521 words to 10521 words with word count threshold 1.
+Max length of caption:  15
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/word_to_idx.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.references.pkl..
+Finished building train caption dataset
+Loaded /home/[ê³„ì •ëª…]/downloads/data/val/val.annotations.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.references.pkl..
+Finished building val caption dataset
+Loaded /home/[ê³„ì •ëª…]/downloads/data/test/test.annotations.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.references.pkl..
+Finished building test caption dataset
+Traceback (most recent call last):
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py", line 224, in <module>
+    main()
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py", line 197, in main
+    vggnet.build()
+  File "/home/[ê³„ì •ëª…]/downloads/code/core_vggnet.py", line 62, in build
+    self.build_params()
+  File "/home/[ê³„ì •ëª…]/downloads/code/core_vggnet.py", line 22, in build_params
+    model = scipy.io.loadmat(self.vgg_path)
+  File "/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio.py", line 142, in loadmat
+    matfile_dict = MR.get_variables(variable_names)
+  File "/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio5.py", line 292, in get_variables
+    res = self.read_var_array(hdr, process)
+  File "/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/io/matlab/mio5.py", line 252, in read_var_array
+    return self._matrix_reader.array_from_header(header, process)
+  File "mio5_utils.pyx", line 675, in scipy.io.matlab.mio5_utils.VarReader5.array_from_header
+  File "mio5_utils.pyx", line 721, in scipy.io.matlab.mio5_utils.VarReader5.array_from_header
+  File "mio5_utils.pyx", line 894, in scipy.io.matlab.mio5_utils.VarReader5.read_cells
+  File "mio5_utils.pyx", line 673, in scipy.io.matlab.mio5_utils.VarReader5.read_mi_matrix
+  File "mio5_utils.pyx", line 723, in scipy.io.matlab.mio5_utils.VarReader5.array_from_header
+  File "mio5_utils.pyx", line 969, in scipy.io.matlab.mio5_utils.VarReader5.read_struct
+  File "mio5_utils.pyx", line 673, in scipy.io.matlab.mio5_utils.VarReader5.read_mi_matrix
+  File "mio5_utils.pyx", line 721, in scipy.io.matlab.mio5_utils.VarReader5.array_from_header
+  File "mio5_utils.pyx", line 894, in scipy.io.matlab.mio5_utils.VarReader5.read_cells
+  File "mio5_utils.pyx", line 673, in scipy.io.matlab.mio5_utils.VarReader5.read_mi_matrix
+  File "mio5_utils.pyx", line 705, in scipy.io.matlab.mio5_utils.VarReader5.array_from_header
+  File "mio5_utils.pyx", line 778, in scipy.io.matlab.mio5_utils.VarReader5.read_real_complex
+  File "mio5_utils.pyx", line 450, in scipy.io.matlab.mio5_utils.VarReader5.read_numeric
+  File "mio5_utils.pyx", line 355, in scipy.io.matlab.mio5_utils.VarReader5.read_element
+  File "streams.pyx", line 195, in scipy.io.matlab.streams.ZlibInputStream.read_string
+  File "streams.pyx", line 188, in scipy.io.matlab.streams.ZlibInputStream.read_into
+IOError: could not read bytes
+(ì˜¤ë¥˜ ë‚´ìš© ë)
+->êµ¬ê¸€ì— ì°¾ì•„ë³´ë‹ˆ .mat ë°ì´í„°ê°€ ì†ì‹¤ëœê²ƒ ê°™ìœ¼ë‹ˆ ë‹¤ì‹œ ë°›ìœ¼ë¼ê³  í•œë‹¤.
+  -> ë‹¤ì‹œ ë°›ì•„ë´¤ë‹¤. (wget http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat -P data/)
+  -> í•´ê²° ëë‹¤.
+
+- ê·¸ëŸ¬ë‚˜ ë°”ë¡œ ìƒˆë¡œìš´ ì˜¤ë¥˜ ë°œìƒ.
+(ì˜¤ë¥˜ ë‚´ìš© ì‹œì‘)
+/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py:47: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+  caption_data.set_value(i, 'caption', caption.lower())
+The number of captions before deletion: 10500
+The number of captions after deletion: 9668
+The number of captions before deletion: 4500
+The number of captions after deletion: 4214
+Finished processing caption data
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.annotations.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.annotations.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.annotations.pkl..
+Loaded /home/[ê³„ì •ëª…]/downloads/data/train/train.annotations.pkl..
+Filtered 10521 words to 10521 words with word count threshold 1.
+Max length of caption:  15
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/word_to_idx.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.references.pkl..
+Finished building train caption dataset
+Loaded /home/[ê³„ì •ëª…]/downloads/data/val/val.annotations.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.references.pkl..
+Finished building val caption dataset
+Loaded /home/[ê³„ì •ëª…]/downloads/data/test/test.annotations.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.references.pkl..
+Finished building test caption dataset
+2018-09-04 15:52:09.046213: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/tensorflow/python/util/tf_should_use.py:118: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+Loaded /home/[ê³„ì •ëª…]/downloads/data/train/train.annotations.pkl..
+Traceback (most recent call last):
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py", line 224, in <module>
+    main()
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py", line 212, in main
+    image_batch = np.array(map(lambda x: ndimage.imread(x, mode='RGB'), image_batch_file)).astype(
+  File "/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py", line 212, in <lambda>
+    image_batch = np.array(map(lambda x: ndimage.imread(x, mode='RGB'), image_batch_file)).astype(
+  File "/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/numpy/lib/utils.py", line 101, in newfunc
+    return func(*args, **kwds)
+  File "/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/ndimage/io.py", line 28, in imread
+    return _imread(fname, flatten, mode)
+  File "/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/numpy/lib/utils.py", line 101, in newfunc
+    return func(*args, **kwds)
+  File "/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/scipy/misc/pilutil.py", line 164, in imread
+    im = Image.open(name)
+  File "/home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/PIL/Image.py", line 2580, in open
+    fp = builtins.open(filename, "rb")
+IOError: [Errno 2] No such file or directory: '/home/[ê³„ì •ëª…]/downloads/data/train_resized/134206'
+(ì˜¤ë¥˜ ë‚´ìš© ë)
+-> íŒŒì¼ëª…ì´ "xxxx.jpg"ì—¬ì•¼ í•˜ëŠ”ë° ê·¸ëƒ¥ "xxxx"ë§Œ ë‚˜ì™”ë‹¤. ê³ ì¹¨(annotation['file_name'] = os.path.join(image_dir, str(image_id)+".jpg")
+
+-ê·¸ëŸ¬ì ì¶œë ¥ ë‚´ìš©
+(ë‚´ìš© ì‹œì‘)
+/home/[ê³„ì •ëª…]/downloads/code/imgPrepro2.py:47: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+  caption_data.set_value(i, 'caption', caption.lower())
+The number of captions before deletion: 10500
+The number of captions after deletion: 9668
+The number of captions before deletion: 4500
+The number of captions after deletion: 4214
+Finished processing caption data
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.annotations.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.annotations.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.annotations.pkl..
+Loaded /home/[ê³„ì •ëª…]/downloads/data/train/train.annotations.pkl..
+Filtered 10521 words to 10521 words with word count threshold 1.
+Max length of caption:  15
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/word_to_idx.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/train/train.references.pkl..
+Finished building train caption dataset
+Loaded /home/[ê³„ì •ëª…]/downloads/data/val/val.annotations.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/val/val.references.pkl..
+Finished building val caption dataset
+Loaded /home/[ê³„ì •ëª…]/downloads/data/test/test.annotations.pkl..
+Finished building caption vectors
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.captions.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.file.names.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.image.idxs.pkl..
+Saved /home/[ê³„ì •ëª…]/downloads/data/test/test.references.pkl..
+Finished building test caption dataset
+2018-09-04 16:00:08.832769: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /home/[ê³„ì •ëª…]/tensorflow/local/lib/python2.7/site-packages/tensorflow/python/util/tf_should_use.py:118: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+Loaded /home/[ê³„ì •ëª…]/downloads/data/train/train.annotations.pkl..
+2018-09-04 16:00:16.122115: W tensorflow/core/framework/allocator.cc:108] Allocation of 1284505600 exceeds 10% of system memory.
+2018-09-04 16:00:19.429469: W tensorflow/core/framework/allocator.cc:108] Allocation of 1284505600 exceeds 10% of system memory.
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+Aborted (core dumped)
+(ë‚´ìš© ë)
+-> VMì˜ ë©”ëª¨ë¦¬ê°€ ë¶€ì¡±í•´ì„œ ê·¸ëŸ° ê±°ë¼ê³  í•œë‹¤. ê·¸ë˜ì„œ vCPU1ì„ vCPU8ë¡œ ìµœëŒ€ë¡œ ëŠ˜ë¦¬ê³  ë¹¨ë¦¬ ëŒë ¤ë´¤ë‹¤
+-> ì°¸ê³ í•œ í˜ì´ì§€: https://cloud.google.com/compute/docs/instances/changing-machine-type-of-stopped-instance
+-> ê·¸ë¦¬ê³  ë‹¤ì‹œ VMì„ ì¼œì„œ ê°€ìƒí™˜ê²½ ë“¤ì–´ê°„ ë‹¤ìŒ python ~/downloads/code/imgPrepro2.py
+-> ì˜¤ì˜¤ì˜¤ì˜¤ ì—­ì‹œ ëŒì•„ê°„ë‹¤ ëŒì•„ê°„ë‹¤
+-> 300 train featureì„ í”„ë¡œì„¸ì‹± í•˜ëŠ”ë° ì•½ $1.3ì •ë„ ë“¤ì–´ê°€ëŠ”ë“¯. ë¹„ìš© ì˜ ë³´ê³  ëŒë¦¬ì $300ê¹Œì§€ë§Œ ë¬´ë£Œë‹ˆê¹Œã… ã… 
+-> 2100 train/ 100 val/ 100 test features ëŒì•„ê°€ëŠ”ë° ê±¸ë¦¬ëŠ” ì‹œê°„ ì•½ 11ë¶„(ì‹œì‘ - ì˜¤ì „ 1ì‹œ 12ë¶„ / ë - ì˜¤ì „ 1ì‹œ 23ë¶„)
+-> ë‹¤ ëŒë ¸ë”ë‹ˆ 298.67ë‹¬ëŸ¬ ë‚¨ì•˜ë‹¤. ì˜¤ì˜¤ì˜¹ 300 featureê°€ ì•„ë‹ˆë¼, ì „ë¶€ ë‹¤ ëŒë ¸ì„ë•Œ 1.3 ë‚˜ê°€ë‚˜ë³´ë‹¤ ìƒê°ë³´ë‹¤ ì €ë ´í•˜ë„¤.
+
+=====================
