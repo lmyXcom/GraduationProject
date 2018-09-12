@@ -42,3 +42,11 @@ Step 7 raw data 수집x (시간 부족)
 
 Step 8 caption data 학습 처리 과정에서 한글 오류로 인한 지연
 
+=====================================================================================
+
+[ 한글 인코딩 관련 ]
+- 주석 방법 해결 안됨
+- sys(reload) setdefaultencoding 이것도 안됨
+- utf-8, cp949, euc-kr, u"한글한글" 다 안됨
+1. blog.naver.com/jmpark1115/221351400002
+2. blog.naver.com/qkaqjaos/221132822855
