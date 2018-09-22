@@ -50,3 +50,6 @@ Step 8 caption data 학습 처리 과정에서 한글 오류로 인한 지연
 - utf-8, cp949, euc-kr, u"한글한글" 다 안됨
 1. blog.naver.com/jmpark1115/221351400002
 2. blog.naver.com/qkaqjaos/221132822855
+
+
+=============json 파일부터 잘못된것을 발견. 인코딩 다 다시 따져가면서 
